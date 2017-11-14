@@ -1,4 +1,4 @@
-# Progetto SurveyStation - SAMTrevano
+# Progetto FaceDetection - SAMTrevano
 
 - Luca Muggiasca (docente responsabile)
 
