@@ -3,15 +3,13 @@
 - Luca Muggiasca (docente responsabile)
 
 ## Informazioni
-Iniziato il: 27.01.2017
+Iniziato il: 07.11.2017
 
-Data di consegna: 12.05.2017
+Data di consegna: 19.01.2018
 
-- [Quaderno dei compiti](Documentazione/0_qdc_p3_stazioneMeteo.pdf)
+- [Quaderno dei compiti](Documentazione/XXXX.pdf)
 
-- [Trello Project Management](https://trello.com/b/KIG5Z9nC/surveystation)
-
-- [GitHub Repository](https://github.com/LuMug/SurveyStation)
+- [Trello Project Management](https://trello.com/b/PfylxN0O/facedetection)
   
 ## Documentazione
 - [Documentazione](Documentazione/0_Documentazione.md)
