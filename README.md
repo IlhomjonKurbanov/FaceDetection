@@ -20,7 +20,7 @@ In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispe
 - [Diari](Documentazione/Diari/)
 
 - [Diario 10.11.2017](Documentazione/Diari/I3_DIARIO_PROG2_10.11.2017.md)
-- [Diario 17.11.2017](Documentazione/Diari/I3_DIARIO_PROG2_ 17.11.2017.md)
+- [Diario 17.11.2017](Documentazione/Diari/I3_DIARIO_PROG2_17.11.2017.md)
 
 
 
