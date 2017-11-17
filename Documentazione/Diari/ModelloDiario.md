@@ -17,6 +17,7 @@ Quello che faccio
 |Lavoro svolto                 |
 |------------------------------|
 |Presentazione PowerPoint del progetto precedente: “Form di inserimento dati Espoprofessioni”.          |
+|------------------------------|
 |Suddivisione in gruppi da 4, consegna del diario dei compiti.     |
 |Domande di progetto:
 |- Grafico come? (grafico ad istogramma/barre)
