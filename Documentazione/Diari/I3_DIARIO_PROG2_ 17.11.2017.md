@@ -14,7 +14,7 @@ Gionata
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv e aggiunta requisiti a trello|                   
 |13:15 - 14:45 |				      |
-|15:00 - 16:30 |Test progetti				      |
+|15:00 - 16:30 |				      |
 
 Gabriele
 
@@ -22,8 +22,8 @@ Gabriele
 |--------------|------------------------------|
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Test progetti				      |
-|15:00 - 16:30 |Test progetti				      |
+|13:15 - 14:45 |Spiegato a Fabio Gola cosa richiede il progetto.				      |
+|15:00 - 16:30 |				      |
 
 
 Fabio
@@ -32,8 +32,8 @@ Fabio
 |--------------|------------------------------|
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Test progetti				      |
-|15:00 - 16:30 |Test progetti				      |
+|13:15 - 14:45 |Presentazione Progetto1 e Recupero del QdC				      |
+|15:00 - 16:30 |				      |
 
 
 Lucas
@@ -41,15 +41,15 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 16:30 |?				      |
+|10:05 - 16:30 |assente				      |
 
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
-
+Ci siamo chiesti come RaspBerry funzioni e come si debba inizializzare.
 
 ##  Punto della situazione rispetto alla pianificazione
-
+Non abbiamo ancora un GANTT
 
 ## Programma di massima per la prossima giornata di lavoro
