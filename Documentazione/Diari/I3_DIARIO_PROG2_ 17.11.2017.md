@@ -48,8 +48,10 @@ Lucas
 
 ##  Problemi riscontrati e soluzioni adottate
 Ci siamo chiesti come RaspBerry funzioni e come si debba inizializzare.
+Abbiamo trovato il file ISO Rasbian ma non abbiamo ancora eseguito l'installazione del S.O.
 
 ##  Punto della situazione rispetto alla pianificazione
-Non abbiamo ancora un GANTT
+L'analisi di dominio e l'analisi dei costi non sono stati pubblicati in quanto sono in possesso di Lucas (oggi assente).
 
 ## Programma di massima per la prossima giornata di lavoro
+Caricare su Git i file mancanti, Design di architettura, Diagramma ER, Creazione ambiente di sviluppo e Installazione S.O.
