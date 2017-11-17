@@ -12,8 +12,9 @@ Gionata
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:05 - 11:00 |Test progetti				      |
-|11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Test progetti				      |
+|11:00 - 11:35 |Scelta tra tracking.js e Open Cv 
+                e aggiunta requisiti a trello|                           
+|13:15 - 14:45 |				      |
 |15:00 - 16:30 |Test progetti				      |
 
 Gabriele
