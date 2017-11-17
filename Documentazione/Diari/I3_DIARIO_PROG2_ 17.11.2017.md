@@ -32,8 +32,8 @@ Fabio
 |--------------|------------------------------|
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Presentazione Progetto1 e Recupero del QdC				      |
-|15:00 - 16:30 |				      |
+|13:15 - 14:45 |Presentazione Progetto1 e Recupero del QdC|
+|15:00 - 16:30 |Creazione del Mockup per la cam|
 
 
 Lucas
