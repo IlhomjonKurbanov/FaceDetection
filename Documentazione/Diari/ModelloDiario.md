@@ -10,6 +10,7 @@ Quello che faccio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
+|8:15 - 9:50   |Presentazione PowerPoint del progetto precedente: “Form di inserimento dati Espoprofessioni”          |
 |8:15 - 9:50   |Installato blablabla          |
 |10:05 - 11:00 |Migliorato documentazione     |
 |...           |...                           |
