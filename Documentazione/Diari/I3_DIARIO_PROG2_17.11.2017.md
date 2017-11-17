@@ -14,7 +14,7 @@ Gionata
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv e aggiunta requisiti a trello|                   
 |13:15 - 14:45 |Download Raspbian e mi sono informato sul raspberry |
-|15:00 - 16:30 |Design della pagina dei grafici. Collegamento raspberry a uno schermo	prova installazione raspbian sul raspberry			      |
+|15:00 - 16:30 |[Design della pagina dei grafici](../../MockuoGrafici.png). Collegamento raspberry a uno schermo	prova installazione raspbian sul raspberry			      |
 
 Gabriele
 
@@ -33,7 +33,7 @@ Fabio
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
 |13:15 - 14:45 |Presentazione Progetto1 e Recupero del QdC|
-|15:00 - 16:30 |Creazione del Mockup per la cam|
+|15:00 - 16:30 |Creazione del [Mockup per la cam](../../MockupCam.PNG)|
 
 
 Lucas
