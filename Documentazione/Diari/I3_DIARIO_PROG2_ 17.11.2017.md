@@ -23,7 +23,7 @@ Gabriele
 |10:05 - 11:00 |Test progetti				      |
 |11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
 |13:15 - 14:45 |Spiegato a Fabio Gola cosa richiede il progetto.				      |
-|15:00 - 16:30 |Creazione GANTT preventivo definitivo				      |
+|15:00 - 16:30 |Creazione GANTT preventivo definitivo + Aggiornamento del file [README.md](../../README.md)				      |
 
 
 Fabio
