@@ -30,9 +30,9 @@ Fabio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 11:00 |Creazione ER [FaceDetectionER.xlsx](../FaceDetectionER.xlsx)						      |
-|11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Presentazione Progetto1 e Recupero del QdC|
+|10:05 - 11:00 |Riunione						      |
+|11:00 - 11:35 |Creazione ER [FaceDetectionER.xlsx](../FaceDetectionER.xlsx)|                           
+|13:15 - 14:45 |Creazione guida per creazione e inserimento dati del database in PHP  [DatabasePHPAccess&Writing.docx](../DatabasePHPAccess&Writing.docx)|
 |15:00 - 16:30 |Creazione del [Mockup per la cam](../../MockupCam.PNG)|
 
 
