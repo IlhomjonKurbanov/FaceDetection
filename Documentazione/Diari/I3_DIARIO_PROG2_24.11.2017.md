@@ -32,7 +32,7 @@ Fabio
 |10:05 - 11:00 |Riunione						      |
 |11:00 - 11:35 |Creazione ER [FaceDetectionER.xlsx](../FaceDetectionER.xlsx)|                           
 |13:15 - 14:45 |Creazione guida per creazione e inserimento dati del database in PHP  [DatabasePHPAccess&Writing.docx](../DatabasePHPAccess&Writing.docx)|
-|15:00 - 16:30 |Creazione del [Mockup per la cam](../../MockupCam.PNG)|
+|15:00 - 16:30 |Realizzazione di un database di prova ed interazione con i dati|
 
 
 Lucas
