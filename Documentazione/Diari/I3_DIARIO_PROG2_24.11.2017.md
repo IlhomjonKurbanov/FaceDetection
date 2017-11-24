@@ -33,7 +33,8 @@ Fabio
 |10:30 - 10:50 |Riunione						      |
 |10:50 - 11:35 |Creazione ER [FaceDetectionER.xlsx](../FaceDetectionER.xlsx)|                           
 |13:15 - 14:45 |Creazione guida per creazione e inserimento dati del database in PHP  [DatabasePHPAccess&Writing.docx](../DatabasePHPAccess&Writing.docx)|
-|15:00 - 16:30 |Realizzazione di un database di prova ed interazione con i dati|
+|15:00 - 16:00 |Realizzazione di un database di prova ed interazione con i dati|
+|16:00 - 16:30 |Implementazione salvataggio persone su database.|
 
 
 Lucas
