@@ -41,7 +41,7 @@ Lucas
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:05 - 10:30 |Teoria su trello			        |
-|10:30 - 10:45 |Analisi dei costi			        |
+|10:30 - 10:45 |[Analisi dei costi](../I3_COSTI_PROG2.md)|
 |10:45 - 13:45 |Prova di OpenCV e raccolta informazioni sulla libreria|
 |13:45 - 13:45 |Creazione macchina virtuale e installazione Debian|
 
