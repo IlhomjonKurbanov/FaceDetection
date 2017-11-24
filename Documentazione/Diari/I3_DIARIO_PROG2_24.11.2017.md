@@ -53,6 +53,7 @@ Lucas
 1. La pagina dedicata alla webcam presentava un ostacolo: capire quando una persona viene inquadrata dalla webcam.
 2. La soluzione consiste nel controllare le posizioni dei rettangoli delle facce e se queste sono sovrapposte, si sta inquadrando la stessa persona.
 1. OpenCV non è risultata una buona scelta per l'utilizzo di applicativi web.
+4. Problema con la scrittura dell`immagine sulla SD. Cambiando il tipo di formattazione dell`SD e cambiando il programma della scrittura sull`SD ha funzionato.
 
 ##  Punto della situazione rispetto alla pianificazione
 In anticipo. Abbiamo già cominciato la fase di Implementazione.
