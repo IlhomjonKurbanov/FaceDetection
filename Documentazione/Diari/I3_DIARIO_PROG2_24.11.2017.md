@@ -20,10 +20,9 @@ Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 11:00 |Test progetti				      |
-|11:00 - 11:35 |Scelta tra tracking.js e Open Cv|                           
-|13:15 - 14:45 |Spiegato a Fabio Gola cosa richiede il progetto.				      |
-|15:00 - 16:30 |Creazione GANTT preventivo definitivo + Aggiornamento del file [README.md](../../README.md)				      |
+|10:05 - 10:30 |Teoria su trello			        |
+|10:30 - 11:35 |ricerca su tracking.js per capire il funzionamento|                           
+|13:15 - 14:45 |Sviluppo pagina con webcam usando la libreria di tracking.js e prove per il funzionamento|
 
 
 Fabio
