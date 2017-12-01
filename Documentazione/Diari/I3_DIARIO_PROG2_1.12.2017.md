@@ -11,10 +11,10 @@ Gionata
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Teoria su trello			        |
-|10:30 - 11:35 |Ricerca e installazione di un programma per scrivere sulla scheda SD|                   
-|13:15 - 14:45 |Installazione Raspbian sulla SD e risoluzione vari problemi|
-|15:00 - 16:30 |Installazione XAMPP sul sistema operativo e prova funzionamento|
+|10:05 - 10:30 |Installazione apache2, php7.			        |
+|10:30 - 11:35 |Installazione mysql, configurazione apache => cd/var/www/html(nano index.html)|                   
+|13:15 - 14:45 |Creazione macchina virtuale Debian, password Password&1 (valevole per tutto, ria root che utente )|
+|15:00 - 16:30 |Configurazione macchina virtuale|
 
 Gabriele
 
