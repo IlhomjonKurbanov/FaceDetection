@@ -22,7 +22,8 @@ Gabriele
 |--------------|------------------------------|
 |10:05 - 11:35 |Implementata la logica della sovrapposizione dei rettangoli nella pagina con webcam			        |
 |13:15 - 13:50 |Implementato un tempo massimo prima di inviare le informazioni al DB|
-|13:50 - 16:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
+|13:50 - 14:00 |Ripasso su come utilizzare ajax per collegare la logica di JavaScript della webcam con PHP.|
+|14:00 - 16:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
 
 
 Fabio
