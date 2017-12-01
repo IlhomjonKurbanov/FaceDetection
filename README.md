@@ -7,7 +7,7 @@ Iniziato il: 07.11.2017
 
 Data di consegna: 19.01.2018
 
-- [Quaderno dei compiti](Documentazione/XXXX.pdf)
+- [Quaderno dei compiti](Documentazione/qdc_p2_faceDetection.pdf)
 
 - [Trello Project Management](https://trello.com/b/PfylxN0O/facedetection)
 
