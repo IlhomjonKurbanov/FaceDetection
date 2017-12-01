@@ -14,7 +14,7 @@ Gionata
 |10:05 - 10:30 |Installazione apache2, php7.			        |
 |10:30 - 11:35 |Installazione mysql, configurazione apache => cd/var/www/html(nano index.html)|                   
 |13:15 - 14:45 |Creazione macchina virtuale Debian, password Password&1 (valevole per tutto, ria root che utente )|
-|15:00 - 16:30 |Configurazione macchina virtuale|
+|15:00 - 16:30 |Configurazione macchina virtuale, inizio creazione login per pagina amminisrtatore|
 
 Gabriele
 
