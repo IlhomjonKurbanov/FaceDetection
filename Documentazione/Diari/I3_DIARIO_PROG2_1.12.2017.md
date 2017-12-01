@@ -1,9 +1,9 @@
-# PROGETTO | Diario di lavoro - 1.12.2017
+# PROGETTO | Diario di lavoro - 01.12.2017
 ##### Gionata Battaglioni
 ##### Gabriele Dominelli
 ##### Fabio Gola
 ##### Lucas Previtali
-### Canobbio, [1.12.2017]
+### Canobbio, [01.12.2017]
 
 ## Lavori svolti
 Gionata
@@ -23,7 +23,8 @@ Gabriele
 |10:05 - 11:35 |Implementata la logica della sovrapposizione dei rettangoli nella pagina con webcam			        |
 |13:15 - 13:50 |Implementato un tempo massimo prima di inviare le informazioni al DB|
 |13:50 - 14:00 |Ripasso su come utilizzare ajax per collegare la logica di JavaScript della webcam con PHP.|
-|14:00 - 16:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
+|14:00 - 14:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
+|14:30 - 16:30 |Trovata la libreria [Chart.js](http://www.html.it/articoli/chart-js-creare-grafici-interattivi/)|
 
 
 Fabio
@@ -43,10 +44,7 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Teoria su trello			        |
-|10:30 - 10:45 |[Analisi dei costi](../I3_COSTI_PROG2.md)|
-|10:45 - 13:45 |Prova di OpenCV e raccolta informazioni sulla libreria|
-|13:45 - 13:45 |Creazione macchina virtuale e installazione Debian|
+|10:05 - 16:30 |Assente			        |
 
 
 
