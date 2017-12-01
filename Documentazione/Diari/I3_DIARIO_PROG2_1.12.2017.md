@@ -20,9 +20,9 @@ Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Teoria su trello			        |
-|10:30 - 11:35 |ricerca su tracking.js per capire il funzionamento|                           
-|13:15 - 16:30 |Sviluppo pagina con webcam usando la libreria di tracking.js e prove per il funzionamento|
+|10:05 - 11:35 |Implementata la logica della sovrapposizione dei rettangoli nella pagina con webcam			        |
+|13:15 - 13:50 |Implementato un tempo massimo prima di inviare le informazioni al DB|
+|13:50 - 16:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
 
 
 Fabio
