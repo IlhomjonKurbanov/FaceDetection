@@ -1,9 +1,9 @@
-# PROGETTO | Diario di lavoro - 24.11.2017
+# PROGETTO | Diario di lavoro - 1.12.2017
 ##### Gionata Battaglioni
 ##### Gabriele Dominelli
 ##### Fabio Gola
 ##### Lucas Previtali
-### Canobbio, [24.11.2017]
+### Canobbio, [1.12.2017]
 
 ## Lavori svolti
 Gionata
