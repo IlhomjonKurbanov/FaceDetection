@@ -52,7 +52,13 @@
 ### Informazioni sul progetto
 
  - **Progetto svolto da:** Gionata Battaglioni, Fabio Gola,Gabriele     	Dominelli, Lucas Previtali
- - **Mandanti del progetto:** Luca Muggiasca - **Docente Responsabile:** Luca Muggiasca - **Scuola:** Arti e Mestieri Trevano - **Sezione:** Informatica - **Classe:** I3AA - **Data d’inizio:** 10.11.2017 - **Termine della consegna:** 19.01.2018
+ - **Mandanti del progetto:** Luca Muggiasca
+ - **Docente Responsabile:** Luca Muggiasca
+ - **Scuola:** Arti e Mestieri Trevano
+ - **Sezione:** Informatica
+ - **Classe:** I3AA
+ - **Data d’inizio:** 10.11.2017
+ - **Termine della consegna:** 19.01.2018
 
 
 ### Abstract
@@ -103,7 +109,9 @@
 
 ### Analisi del dominio
 
-  Il progetto completo verrà presentato alla prossima edizione di Espoprofessioni, perciò sarà presentato principalmente a un pubblico di ragazzi e ragazze non per forza appassionati di informatica (in generale il gli “utenti” saranno variegati). Il pubblico presente sarà lì soprattutto per vedere diverse professioni e molti saranno studenti. Per capire il funzionamento del sistema non bisogna essere per forza esperti o appassionati di informatica.  
+  Il progetto completo verrà presentato alla prossima edizione di Espoprofessioni, perciò sarà presentato principalmente a un pubblico di ragazzi e ragazze non per forza appassionati di informatica (in generale il gli “utenti” saranno variegati). Il pubblico presente sarà lì soprattutto per vedere diverse professioni e molti saranno studenti. Per capire il funzionamento del sistema non bisogna essere per forza esperti o appassionati di informatica.
+
+  
 ### Analisi e specifica dei requisiti
 
   Il committente richiede una pagina web che effettua un riconoscimento facciale. Una volta che la faccia viene riconosciuta dalla pagina viene salvata all`interno di una variabile e a sua volta salvata in un database. In base al numero di persone riconosciute e al tempo che le persone rimangono ferme davanti alla web cam viene redatto un grafico. Mentre un secondo grafico veiene redatto in base al numero di persone che sono state riconosciute dalla webcam e alla fascia oraria. 
@@ -238,7 +246,7 @@ funzionalità del prodotto.
 ### Pianificazione
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
-![Gantt Preventivo](Analisi/GANTT_preventivo.png)
+![Gantt Preventivo](Analisi/GANTT_preventivo.jpg)
 
 
 
