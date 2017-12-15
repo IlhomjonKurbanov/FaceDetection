@@ -42,6 +42,8 @@ Lucas
 |10:35 - 10:45 |ristrutturazione repository del progetto|
 |10:45 - 14:00 |installazione php 7.2.0 e creazione form di login per l'admin|
 |14:00 - 14:45 |integrazione del form di login nella pagina di statistica (con alcune modifiche alla pagina stessa)|
+|15:00 - 16:00 |presentazione primo progetto e colloquio per la nota|
+|16:00 - 16:30 |ricerca funzionamento mi piace e non mi piace (indice di gradimento) sul modello usato da Youtube|
 
 
 ##  Problemi riscontrati e soluzioni adottate
