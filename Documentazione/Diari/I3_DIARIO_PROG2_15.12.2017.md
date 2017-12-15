@@ -53,11 +53,9 @@ Lucas
 4. Problema con la scrittura dell`immagine sulla SD. Cambiando il tipo di formattazione dell`SD e cambiando il programma della scrittura sull`SD ha funzionato.
 
 ##  Punto della situazione rispetto alla pianificazione
-In anticipo. Abbiamo già cominciato la fase di Implementazione.
+Leggermente in anticipo rispetto alla programmazione.
 
 ## Programma di massima per la prossima giornata di lavoro
-Continuare e cominciare la logica programmatoria di:
-- Pagina WebCam
-- Pagina Grafici
-- DataBase
-- Raspberry
+- Continuare pagina di login per l'admin.
+- finire gestione dati per i grafici.
+- trasportaramento sul rasperry.
