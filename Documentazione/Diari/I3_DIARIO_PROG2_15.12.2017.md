@@ -19,20 +19,18 @@ Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 11:35 |Implementata la logica della sovrapposizione dei rettangoli nella pagina con webcam			        |
-|13:15 - 13:50 |Implementato un tempo massimo prima di inviare le informazioni al DB|
-|13:50 - 14:00 |Ripasso su come utilizzare ajax per collegare la logica di JavaScript della webcam con PHP.|
-|14:00 - 14:30 |Ricerca di una valida libreria per la rappresentazione di grafici sul web|
-|14:30 - 16:30 |Trovata la libreria [Chart.js](http://www.html.it/articoli/chart-js-creare-grafici-interattivi/)|
+|10:05 - 10:50 |Riunione					      |
+|10:50 - 11:35 |Gestione dati database per grafici					      |                         
+|13:15 - 16:30 |Gestione dati database per grafici|
 
 
 Fabio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Riunione					      |
-|10:30 - 11:35 |Implementazione salvataggio persone su database					      |                         
-|13:15 - 16:30 |Sviluppo ricezione dati da sito a database|
+|10:05 - 10:50 |Riunione					      |
+|10:50 - 11:35 |Gestione dati database per grafici					      |                         
+|13:15 - 16:30 |Gestione dati database per grafici|
 
 
 Lucas
