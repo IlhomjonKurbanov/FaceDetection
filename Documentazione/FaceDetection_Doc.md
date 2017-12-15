@@ -340,7 +340,7 @@ versione, mentre le vecchie saranno sui diari.
 
 Prima di iniziare a scrivere il codice abbiamo scelto assime al gurppo una truttura base sel sito, di come vorremmo che esso diventi. 
 Per la pagina che riguarda la webcam, cioè dove l`utente vede sè stesso abbiamo pensato a un approccio molto minimale.
-![Pagina WebCam](Analisi/MockupCam.png)
+![Pagina WebCam](Analisi/MockupCam.PNG)
 
 Mentre per la pagina dove verranno inseriti i grafici abbiamo pensato a un approccio un po meno minimale ma più adatto alla situazione.
 ![Pagina Gafici](Analisi/MockuoGrafici.png)
