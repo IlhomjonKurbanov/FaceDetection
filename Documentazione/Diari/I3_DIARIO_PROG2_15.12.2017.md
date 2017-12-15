@@ -43,7 +43,7 @@ Lucas
 |10:05 - 10:35 |riunione con i compagni per mettermi in pari data la mia assenza la scorsa lezione e riunione con il committente|
 |10:35 - 10:45 |ristrutturazione repository del progetto|
 |10:45 - 14:00 |installazione php 7.2.0 e creazione form di login per l'admin|
-|14:00 - 14:00 |installazione php 7.2.0 e crezione form di login per l'admin|
+|14:00 - 14:45 |integrazione del form di login nella pagina di statistica (con alcune modifiche alla pagina stessa)|
 
 
 ##  Problemi riscontrati e soluzioni adottate
