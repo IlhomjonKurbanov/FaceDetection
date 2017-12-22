@@ -52,4 +52,5 @@ Pienamente nel tempo del programma.
 
 ## Programma di massima per la prossima giornata di lavoro
 - Caricare il progetto su raspberry e testare le prestazioni, aggiustando i vari errori che potrebbero sorgere.
+- finire la pagina dell'admin.
 
