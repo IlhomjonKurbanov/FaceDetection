@@ -28,9 +28,7 @@ Fabio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:50 |-|
-|10:50 - 11:35 |-|                         
-|13:15 - 14:45 |-|
+|10:05 - 16:30 | Assente |
 
 
 Lucas
@@ -38,10 +36,8 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:35 ||
-|10:35 - 10:45 ||
-|10:45 - 14:00 ||
-|14:00 - 14:45 ||
+|10:05 - 11:25 | Secondo test del modulo |
+|11:25 - 11:35 | messa in pari su quanto svolto dai miei compagni nelle prime due ore|
 
 
 
