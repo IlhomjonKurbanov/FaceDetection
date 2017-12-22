@@ -37,11 +37,14 @@ Lucas
 |--------------|------------------------------|
 |10:05 - 11:25 | Secondo test del modulo |
 |11:25 - 11:35 | messa in pari su quanto svolto dai miei compagni nelle prime due ore|
+|13:15 - 14:45 | creazione pagina per l'admin per la gestione dei grafici, installazione xampp e Heidi SQL|
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. Gionata: Ho docuto rinstallare mysql e heidiSQL per poter creare il database.
+1. Gionata: Ho dovuto rinstallare mysql e heidiSQL per poter creare il database.
+2. Gabriele: Ho dovuto convertire la data di JavaScript in un dato compatibile con SQL, trasformandola in un dato di tipo ISOString.
+3. Lucas: La porta 443 era occupata da un servizio di VMWare (VMWarehostd) che impediva il funzionamento di apache. Ho dovuto       disattivare il servizio.
 
 
 ##  Punto della situazione rispetto alla pianificazione
