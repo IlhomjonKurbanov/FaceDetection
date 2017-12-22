@@ -11,17 +11,16 @@ Gionata
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:50 ||
-|10:50 - 11:35 ||                         
-|13:15 - 14:45 ||
+|10:05 - 11:35 |Creazione diario e database in mysql|                     
+|13:15 - 14:45 |Salvataggio e esportazione del databse.|
 
 Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:50 ||
-|10:50 - 11:35 ||                         
-|13:15 - 14:45 ||
+|10:05 - 11:35 |ho generato il codice per interagire con il database con i grafici|
+|13:15 - 14:45 |ho generato il codice per interagire con la webcam|                         
+
 
 
 Fabio
@@ -42,7 +41,7 @@ Lucas
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. Scrivere i problemi 
+1. Gionata: Ho docuto rinstallare mysql e heidiSQL per poter creare il database.
 
 
 ##  Punto della situazione rispetto alla pianificazione
