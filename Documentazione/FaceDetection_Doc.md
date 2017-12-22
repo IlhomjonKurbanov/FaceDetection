@@ -333,8 +333,8 @@ agli attributi e le relazioni degli oggetti in uso.
 
 ### Schema E-R, schema logico e descrizione.
 
-Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
-versione, mentre le vecchie saranno sui diari.
+Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite le varie pagine web.
+![Pagina WebCam](Analisi/schemaER.png)
 
 ### Design delle interfacce
 
