@@ -1,9 +1,9 @@
-# PROGETTO | Diario di lavoro - 01.12.2017
+# PROGETTO | Diario di lavoro - 12.01.2018
 ##### Gionata Battaglioni
 ##### Gabriele Dominelli
 ##### Fabio Gola
 ##### Lucas Previtali
-### Canobbio, [01.12.2017]
+### Canobbio, [12.01.2018]
 
 ## Lavori svolti
 Gionata
@@ -11,10 +11,9 @@ Gionata
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Installazione apache2, php7.			        |
-|10:30 - 11:35 |Installazione mysql, configurazione apache => cd/var/www/html(nano index.html)|                   
-|13:15 - 14:45 |Creazione macchina virtuale Debian, password Password&1 (valevole per tutto, ria root che utente )|
-|15:00 - 16:30 |Configurazione macchina virtuale, inizio creazione login per pagina amminisrtatore|
+|10:05 - 11:35 |Creazione indice di gradimento |                 
+|13:15 - 14:45 |Modifica pagina admin|
+|15:00 - 16:30 ||
 
 Gabriele
 
@@ -46,17 +45,10 @@ Lucas
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. La pagina dedicata alla webcam presentava un ostacolo: capire quando una persona viene inquadrata dalla webcam.
-2. La soluzione consiste nel controllare le posizioni dei rettangoli delle facce e se queste sono sovrapposte, si sta inquadrando la stessa persona.
-1. OpenCV non è risultata una buona scelta per l'utilizzo di applicativi web.
-4. Problema con la scrittura dell`immagine sulla SD. Cambiando il tipo di formattazione dell`SD e cambiando il programma della scrittura sull`SD ha funzionato.
+1. .
 
 ##  Punto della situazione rispetto alla pianificazione
-In anticipo. Abbiamo già cominciato la fase di Implementazione.
+-
 
 ## Programma di massima per la prossima giornata di lavoro
-Continuare e cominciare la logica programmatoria di:
-- Pagina WebCam
-- Pagina Grafici
-- DataBase
-- Raspberry
+-
