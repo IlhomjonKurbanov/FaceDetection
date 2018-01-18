@@ -401,9 +401,8 @@ progetto.
 
 ## Consuntivo
 
-Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
-differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
-consuntivo).
+Ecco come sono andate le ore di lavoro, in base a quelle che abbiamo programmato prima dell`inizio del progetto.
+![Gantt Preventivo](Analisi/GANTT_consuntivo.png)
 
 ## Conclusioni
 
