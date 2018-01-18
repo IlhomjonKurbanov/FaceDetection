@@ -51,7 +51,7 @@
 
 ### Informazioni sul progetto
 
- - **Progetto svolto da:** Gionata Battaglioni, Fabio Gola,Gabriele     	Dominelli, Lucas Previtali
+ - **Progetto svolto da:** Gionata Battaglioni, Fabio Gola,Gabriele Dominelli, Lucas Previtali
  - **Mandanti del progetto:** Luca Muggiasca
  - **Docente Responsabile:** Luca Muggiasca
  - **Scuola:** Arti e Mestieri Trevano
@@ -116,27 +116,7 @@
 
   Il committente richiede una pagina web che effettua un riconoscimento facciale. Una volta che la faccia viene riconosciuta dalla pagina viene salvata all`interno di una variabile e a sua volta salvata in un database. In base al numero di persone riconosciute e al tempo che le persone rimangono ferme davanti alla web cam viene redatto un grafico. Mentre un secondo grafico veiene redatto in base al numero di persone che sono state riconosciute dalla webcam e alla fascia oraria. 
 
-  -   Quali sono i bisogni del committente?
-
-  -   Quali funzioni deve svolgere il prodotto?
-
-  -   Come devono essere implementate?
-
-  -   L’utente, come vorrebbe/dovrebbe interagire con il prodotto?
-
-  -   Come verrà utilizzato il prodotto?
-
-  -   Che tipo di interfaccia si immagina?
-
-  -   Che prestazioni minime deve fornire il prodotto?
-
-  -   Che grado di sicurezza deve avere il prodotto?
-
-  -   …
-
   
-
-
   |ID  |REQ-001                                        |
   |----|------------------------------------------------|
   |**Nome**    |Face Detection |
@@ -307,11 +287,6 @@ Facendo una somma dei vari totali arriviamo al costo totale finale di questo pro
 
 ## Progettazione
 
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
-
 ### Design dell’architettura del sistema
 
 Descrive:
@@ -328,8 +303,7 @@ Descrive:
 
 ### Design dei dati e database
 
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
+Il database che abbiamo creato è molto basico. Presenta due tabelle, la tabella Amministratore dove vengono contenuti i seguenti campi(NomeUtente(PK),Id_WebCam(FK),Password,Densità_Bordo,Conteggio_Secondi, Dimensione_step,Scala_iniziale). Mentre la seconda tabella chiamata WebCam che contiene (Id_Webcam(PK),Orario_inizio,Orario_fine,Data). Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può avere".
 
 ### Schema E-R, schema logico e descrizione.
 
