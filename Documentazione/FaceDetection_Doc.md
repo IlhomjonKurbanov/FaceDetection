@@ -374,14 +374,81 @@ fungono da garanzia di qualità del prodotto. Ogni test deve essere
 ripetibile alle stesse condizioni.
 
 
-|Test Case      | TC-001                               |
+
+|Test Case      | TC-002                              |
 |---------------|--------------------------------------|
-|**Nome**       |Import a card, but not shown with the GUI |
-|**Riferimento**|REQ-012                               |
-|**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
-|**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
-|**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
-|**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
+|**Nome**       |Creazione macchina virtuale |
+|**Riferimento**|REQ-002                               |
+|**Descrizione**|Creazione macchina virtuale per gestire le cartelle su raspberry|
+|**Prerequisiti**||
+|**Procedura**     | - Installare un programma per gestire le macchine virtuali, noi abbuamo usato VirtualBox. - Creare una macchina virtuale linux basata su raspbian, in questo caso abbiamo usato debian|
+|**Risultati attesi** |Avere la stessa struttura di caretelle che é presente su raspbian.|
+
+
+|Test Case      | TC-003                               |
+|---------------|--------------------------------------|
+|**Nome**       |Creazione pagina Web per webcam|
+|**Riferimento**|REQ-003                               |
+|**Descrizione**|Gestire il riconoscimento facciale|
+|**Prerequisiti**|- |
+|**Procedura**     | - Scaricare la libreria traking.js - Modificare la libreira con il linguaggio JavaScript. |
+|**Risultati attesi** |Avere la pagina web che riconosce le faccie e manda le informazioni al database|
+
+|Test Case      | TC-004                               |
+|---------------|--------------------------------------|
+|**Nome**       |Creazione pagina Web per grafici |
+|**Riferimento**|REQ-004                               |
+|**Descrizione**|Gestire i dati mandati dalla pagina web della webcam tramite dei grafici|
+|**Prerequisiti**|- |
+|**Procedura**     | - Creare i grafici - Prendere i dati dal database e inserirli all`inerno dei grafici.|
+|**Risultati attesi** |I grafici vengono mostrati correttamente in base hai dati presi dal database. |
+
+|Test Case      | TC-005                               |
+|---------------|--------------------------------------|
+|**Nome**       |Creazione pagina Web per gestione dell’admin|
+|**Riferimento**|REQ-005                               |
+|**Descrizione**|Creazione di una pagina inserente all`accesso asmin per la modifica dei parametri della webcam |
+|**Prerequisiti**|Aver creato la pagina web per la Webcam |
+|**Procedura**     | - Creare un login con l`uso di JavaScript - Gestire la pagina Amministratore inserendo i parametri di modifica.|
+|**Risultati attesi** |L`utente admin riesce a accedere alla pagina e a modificare i parametri.|
+
+|Test Case      | TC-006                               |
+|---------------|--------------------------------------|
+|**Nome**       |Creare una banca dati |
+|**Riferimento**|REQ-006                               |
+|**Descrizione**|Creazione di una bancadati che contiene i dati raccolti dalla pagina web della Webcam|
+|**Prerequisiti**|Aver creato la pagina della webCam|
+|**Procedura**     | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto nella pagian web della Webcam.|
+|**Risultati attesi** |Il database riesce a prendere i dati delle pagine prescritte|
+
+|Test Case      | TC-007                               |
+|---------------|--------------------------------------|
+|**Nome**       |Ricerca di nuovi volti |
+|**Riferimento**|REQ-007                               |
+|**Descrizione**|I volti vengono trovati dalla pagina della Webcam|
+|**Prerequisiti**|Download libreria tracking.js |
+|**Procedura**     | - Aver installato la libreria tracking.js - Gestire il riconoscimento facciale tramite JavaScript |
+|**Risultati attesi** |La pagina della Webcam é in grado di riconoscre i volti|
+
+|Test Case      | TC-008                               |
+|---------------|--------------------------------------|
+|**Nome**       |Salvataggio delle persone sul DB|
+|**Riferimento**|REQ-008                               |
+|**Descrizione**|Questo test serve per verificare il corretto funzionamento dell`immissione dei dati all`interno del database|
+|**Prerequisiti**|aver creato il database|
+|**Procedura**     | - Collegare il database alle pagine tramite php |
+|**Risultati attesi** |I dati presi dalla webcam sono presenti all`interno del databse |
+
+|Test Case      | TC-009                               |
+|---------------|--------------------------------------|
+|**Nome**       |Utilizzo del prodotto su RaspBerry|
+|**Riferimento**|REQ-009                               |
+|**Descrizione**|Installazione del sitema operativo su Rasberry e installazione webserver|
+|**Prerequisiti**|avere un Raspberry|
+|**Procedura**     | - Caricare l`immagine del sistema operativo sul raspberry - Installare un webserver tramite in comandi opportuni|
+|**Risultati attesi** |Raspberry é effetivamente un webserver.|
+
+
 
 
 ### Risultati test
