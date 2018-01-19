@@ -353,7 +353,23 @@ Tramite il seguente comando:
 
 `sudo apt-get install mariadb-server`
 
-### Scrivere Titolo
+### Creazione Database
+
+Per far si che le pagine comunicano e si scambino i dati tra di solo é stato necessario creare un database.
+Per crearlo abbiamo usato Heidi versione 9.4.0.5125. Heidi è un programma che permette di creare database tramite un interfaccia grafica.
+Ecco come si presenta il database su Heidi.
+![SO Caricamento](Implementazione/dbFace.png)
+
+La tabella Webcam si presenta così:
+
+![SO Caricamento](Implementazione/webcamDB.png)
+
+Mentre la tabella amministratore si presenta in questo modo:
+
+![SO Caricamento](Implementazione/amministratoreDB.png)
+
+Ora abbiamo un database in grado di comunicare i propri dati.
+
 
 ## Test
 
