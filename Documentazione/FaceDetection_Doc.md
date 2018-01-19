@@ -398,7 +398,7 @@ Da questa pagina è anche possibile per l'admin eseguire l'accesso. L'accesso av
 
 dopo aver premuto il pulsante appare un form che permette di inserire i dati. I dati richiesti sono semplicemente username e password. 
 
-![form login](Implementazione/login admin.PNG)
+![form login](Implementazione/login_admin.PNG)
 
 Per verificare i dati è richiesto di premere il pulsante login. Se i dati inseriti sono validi verrà caricata in una nuova scheda la pagina dell'admin.
 
@@ -410,22 +410,20 @@ La pagina dell'admin serve per permettere di modificare alcune impostazioni rela
 3. Step size
 La prima impostazione permette di cambiare la densità del rettangolo che si crea attorno alle faccie individuate, la seconda serve per definire la larghezza del rettangolo e la terza permette di modificare la frequenza con la quale aggiornare il frame della pagina.
 
-![Pagina Admin](Implementazione/pagina admin.PNG)
+![Pagina Admin](Implementazione/pagina_admin.PNG)
 
 per immettere i valori abbiamo usato tre input di tipo range, il valore scelto viene mostrato all'interno di altri tre input, di tipo textbox.
 
 ~~~
 <p>Edges Density:</p>
-	  		<input type="range" min="1" max="50" value="1" class="slider" id="density" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="densityValue">
-	
-	    	<p>Initial Scale:</p>
-	  		<input type="range" min="1" max="10" value="4" class="slider" id="scale" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="scaleValue">
-
-	    	<p>Step Size:</p>
-	  		<input type="range" min="1" max="5" value="2" class="slider" id="size" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="sizeValue">
+<input type="range" min="1" max="50" value="1" class="slider" id="density" onchange="nuovoValore()">
+Valore: <input type="textbox" class="tbox" id="densityValue">
+<p>Initial Scale:</p>
+<input type="range" min="1" max="10" value="4" class="slider" id="scale" onchange="nuovoValore()">
+Valore: <input type="textbox" class="tbox" id="scaleValue">
+<p>Step Size:</p>
+<input type="range" min="1" max="5" value="2" class="slider" id="size" onchange="nuovoValore()">
+Valore: <input type="textbox" class="tbox" id="sizeValue">
 ~~~
 
 Questa pagina è stata ideata per fare in modo che le impostazioni venissero passate al database. Dal database le nuove impostazioni devono essere mandate alla pagina della webcam per aggiornarla.
