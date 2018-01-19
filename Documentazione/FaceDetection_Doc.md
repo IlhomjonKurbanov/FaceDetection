@@ -366,7 +366,7 @@ Prima di tutto abbiamo scelto di utilizzare la libreria di [tracking.js](https:/
 
 Così è come la pagina mostrala sua forma:
 
-![SO WebCam](Implementazione/paginaWebCam.png)
+![SO WebCam](Implementazione/paginaWebCam.PNG)
 
 Con il corretto rilevamento di ogni faccia sullo schermo (contenuto in un oggetto "rect"), viene eseguito un codice JavaScript. Per questa operazione si utilizza un canvas su HTML (qui chiamato "context") che permette di disegnare sullo schermo figure in maniera semplice.
 Il codice qui riportato permette di definire i colori del rettangolo (bordo e testo), disegnarlo e scrivere del testo di informazioni (come l'ID attribuito alle facce e le coordinate che lo localizzano).
