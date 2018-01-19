@@ -13,7 +13,7 @@ Gionata
 |--------------|------------------------------|
 |10:05 - 11:35 |Creazione implementazione documentazione|                 
 |13:15 - 14:45 |Scrittura abstract, e rilettura documentazione con eventiale modifica|
-|15:00 - 16:30 |-|
+|15:00 - 16:30 |trascrizione dei test sulla dociemntazione e creazione di un manuale utenti|
 
 Gabriele
 
