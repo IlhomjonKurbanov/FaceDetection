@@ -349,14 +349,47 @@ Per Apache abbiamo scelto la versione 2.4.25. Per poter installarlo abbiamo dovu
 
 `sudo get-upgrade`
 
-Una volta eseguito sia l`update che l`upgrade possiamo installare Apache.
+Una volta eseguito sia un update che un upgrade possiamo installare Apache.
 
 `sudo apt-get install apache2 apache2-doc`
 
-Una volta intallato Apache abbiamo continuato intallando Php versione 7.0.19.
+Eseguito il download bisgonera attivare il servizio:
+
+`sudo /etc/init.d/apache2 restart` 
+
+Per verificare il corretto funzionamento di Apache basta aprire una pagina web e digitare nella barra di ricerca localhost.
+Se é stato installato correttamente apparirà la seguente pagina.
+![SO Caricamento](Implementazione/ApacheWork.png)
+
+Una volta installato Apache abbiamo continuato intallando Php versione 7.0.19.
+Tramite il seguente comando:
 
 `sudo apt-get install php5`
 
+Una volta installato il servizio Php bisgonerà creare il file test.php per verificare il corretto funzionamento.
+
+`sudo nano /var/www/html/test.php`
+
+Creato il file bisgonerà scrivere il seguente codice:
+
+`<html>
+ <head>
+  <title>Test PHP</title>
+ </head>
+ <body>
+  <?php
+  phpinfo();
+  ?>
+ </body>`
+  
+ Se caricando la pagina test.php apparirà come la seguente immagine, il download é andato a buon fine.
+ ![SO Caricamento](Implementazione/testPHP.png)
+ 
+ 
+Una volta fatto ciò abbiamo proseguito installando MariaDB versione 10.1.23.
+Tramite il seguente comando:
+
+`sudo apt-get install mariadb-server`
 
 
 
