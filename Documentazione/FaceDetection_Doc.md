@@ -437,10 +437,5 @@ Elenco degli allegati, esempio:
 
 -   Diari di lavoro
 
-
--   Istruzioni di installazione del prodotto (con credenziali
-    di accesso) e/o di eventuali prodotti terzi
-
- 
--   Eventuali guide utente / Manuali di utilizzo
+-   Guida utente / Manuale di utilizzo
 
