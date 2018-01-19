@@ -343,6 +343,23 @@ Una volta fatto ciò siamo pronti per mettere il sistema operativo su Raspberry.
 ![SO Caricamento](Implementazione/installazione.png)
 
 Ora il sistema operativo è installato e adesso ci tocca installare Apache, Php e MariaDB
+Per Apache abbiamo scelto la versione 2.4.25. Per poter installarlo abbiamo dovuto Prima di tutto collegarci a internet tramite il Raspberry, aprire il terminale e digitare i seguenti comandi.
+
+`sudo get-update`
+
+`sudo get-upgrade`
+
+Una volta eseguito sia l`update che l`upgrade possiamo installare Apache.
+
+`sudo apt-get install apache2 apache2-doc`
+
+Una volta intallato Apache abbiamo continuato intallando Php versione 7.0.19.
+
+`sudo apt-get install php5`
+
+
+
+
 
 
 
