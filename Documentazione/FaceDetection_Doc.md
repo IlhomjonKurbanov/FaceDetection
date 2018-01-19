@@ -380,9 +380,14 @@ context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
 context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
 context.fillText('id: ' + ID, rect.x + rect.width + 5, rect.y + 33);
 ~~~
-
+Per ciò che riguarda il passaggio dei dati al database ci siamo dovuti collegare al database tramite php ed abbiamo preso i dati ricevuti dalla pagina e li abbiamo inseriti nell'apposita tabella del database.
+~~~
+$sql = "INSERT INTO webcam (Orario_inizio, Orario_fine, Data) VALUES (".$Orario_inizio.", ".$Orario_fine.", ".$Data.");";
+if($conn->query($sql) == FALSE) {
+  echo "invio non riuscito!";
+}
 ### Creazione pagina Grafici
-
+~~~
 La pagina grafici esegue una continua sincronizzazione sul DataBase affinchè tutti i dati siano sempre aggiornati.
 La sua funzione è quella di mostrare 2 grafici:
 1. Mostrare la quantità di persone specchiati nella WebCam per ogni fascia oraria.
@@ -390,7 +395,45 @@ La sua funzione è quella di mostrare 2 grafici:
 
 Tramite una ricerca su Internet siamo venuti a conoscenza di una libreria specializzata nel dispaly di grafici non troppo dispendiosa per quanto riguarda le nostre singole conoscenze personali: [Chart.js](http://www.chartjs.org/).
 
-(fabio gola)
+Per creare i grafici mi sono dapprima connesso al database ed ho preso ed inserito dentro degli array i dati della data attuale, dell'inizio e della fine di sessione.
+~~~
+$sql = "SELECT Orario_inizio, Orario_fine, Data FROM webcam";
+$result = $conn->query($sql);
+			
+$Orario_inizio=array();
+$Orario_fine=array();
+$Data=array();
+$arrayIndex = 0;
+			
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
+		array_push($Orario_inizio, $row["Orario_inizio"]);
+		array_push($Orario_fine, $row["Orario_fine"]);
+		array_push($Data, $row["Data"]);
+	}
+} else {
+	echo "0 results";
+}
+~~~
+In seguito ho fatto un counter che permettesse di calcolare quante persone utilizzano l'applicazione in vari fasci d'orario. Inoltre ho utilizzato una tecnica simile anche per calcolare la media della durata di sessione per ogni utente.
+Dopo aver eseguito tutti i calcoli ed aver inserito i risultati negli array, ho creato i grafici ed inserito i dati. Per inserirli ho utilizzato più volte una tecnica di programmazione che permette l'utilizzo delle variabili presenti nella porzione di codice php e l'utilizzo diretto nella parte javascript, e l'ho inserita all'interno della parte "data" della creazione del grafico. 
+~~~
+var dataNumeroVisite = {
+  labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00",             "22:00"],
+	datasets: [{
+      	label: "Numero di visite",
+				backgroundColor: "rgba(255,99,132,0.2)",
+				borderColor: "rgba(255,99,132,1)",
+				borderWidth: 2,
+				hoverBackgroundColor: "rgba(255,99,132,0.4)",
+				hoverBorderColor: "rgba(255,99,132,1)",
+				data: [<?php echo $countUsers[0]; ?>, <?php echo $countUsers[1]; ?>, <?php echo $countUsers[2]; ?>, <?php echo $countUsers[3]; ?           >, <?php echo $countUsers[4]; ?>, <?php echo $countUsers[5]; ?>, <?php echo $countUsers[6]; ?>, <?php echo $countUsers[7]; ?>,          <?php echo $countUsers[8]; ?>, <?php echo $countUsers[9]; ?>, <?php echo $countUsers[10]; ?>, <?php echo $countUsers[11]; ?>,            <?php echo $countUsers[12]; ?>,0]
+      	}]
+  };
+~~~
+Questo è il risultato ottenuto:
+
+![Pagina Admin](Implementazione/PaginaGrafici.PNG)
 
 Da questa pagina è anche possibile per l'admin eseguire l'accesso. L'accesso avviene tramite un pulsante (che mostra la scritta "Login") 
 
