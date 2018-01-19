@@ -63,42 +63,10 @@
 
 ### Abstract
 
-  E’ una breve e accurata rappresentazione dei contenuti di un documento,
-  senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
-  dovrebbe essere quello di far conoscere all’utente il contenuto di base
-  di un documento e metterlo nella condizione di decidere se risponde ai
-  suoi interessi e se è opportuno il ricorso al documento originale.
+At the beginning  teachers in charge showed us the project, how it had to be done and what
+we would have to do to keep an appropriate organization. At the beginning we had some trouble because we didn't know where to start. The main problem was connect the webcam page at the database. Another problem was lerning about the raspberry, how it work and how use it.
+The result was what I expected since the beginning, our approach worked very well except, as said before, we had to invest maybe too much time consulting with various guides.
 
-  Può contenere alcuni o tutti gli elementi seguenti:
-
-  -   **Background/Situazione iniziale**
-
-  -   **Descrizione del problema e motivazione**: Che problema ho cercato
-      di risolvere? Questa sezione dovrebbe includere l'importanza del
-      vostro lavoro, la difficoltà dell'area e l'effetto che potrebbe
-      avere se portato a termine con successo.
-
-  -   **Approccio/Metodi**: Come ho ottenuto dei progressi? Come ho
-      risolto il problema (tecniche…)? Quale è stata l’entità del mio
-      lavoro? Che fattori importanti controllo, ignoro o misuro?
-
-  -   **Risultati**: Quale è la risposta? Quali sono i risultati? Quanto è
-      più veloce, più sicuro, più economico o in qualche altro aspetto
-      migliore di altri prodotti/soluzioni?
-
-  Esempio di abstract:
-
-  > *As the size and complexity of today’s most modern computer chips
-  > increase, new techniques must be developed to effectively design and
-  > create Very Large Scale Integration chips quickly. For this project, a
-  > new type of hardware compiler is created. This hardware compiler will
-  > read a C++ program, and physically design a suitable microprocessor
-  > intended for running that specific program. With this new and powerful
-  > compiler, it is possible to design anything from a small adder, to a
-  > microprocessor with millions of transistors. Designing new computer
-  > chips, such as the Pentium 4, can require dozens of engineers and
-  > months of time. With the help of this compiler, a single person could
-  > design such a large-scale microprocessor in just weeks.*
 
 ### Scopo
 
@@ -287,20 +255,6 @@ Facendo una somma dei vari totali arriviamo al costo totale finale di questo pro
 
 ## Progettazione
 
-### Design dell’architettura del sistema
-
-Descrive:
-
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
-
 ### Design dei dati e database
 
 Il database che abbiamo creato è molto basico. Presenta due tabelle, la tabella Amministratore dove vengono contenuti i seguenti campi(NomeUtente(PK),Id_WebCam(FK),Password,Densità_Bordo,Conteggio_Secondi, Dimensione_step,Scala_iniziale). Mentre la seconda tabella chiamata WebCam che contiene (Id_Webcam(PK),Orario_inizio,Orario_fine,Data). Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può avere".
@@ -485,11 +439,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 ### Risultati test
 
-Tabella riassuntiva in cui si inseriscono i test riusciti e non del
-prodotto finale. Se un test non riesce e viene corretto l’errore, questo
-dovrà risultare nel documento finale come riuscito (la procedura della
-correzione apparirà nel diario), altrimenti dovrà essere descritto
-l’errore con eventuali ipotesi di correzione.
+I risultati dei test non sono male ma neanche eccelsi. I test TC-001, TC-003, TC-004,TC-005,TC-006,TC-008 sono passati. Ma il problema principale non é stato tanto la creazione delle pagine ma il collegamento tra loro mediante il database. Un altro problema é stata la scrittura del codice della pagina Webcam, il nostro programma riconosce solo una faccia alla volta.
 
 ### Mancanze/limitazioni conosciute
 
