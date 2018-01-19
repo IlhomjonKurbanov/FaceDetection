@@ -12,16 +12,15 @@ Gionata
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:05 - 11:35 |Creazione implementazione documentazione|                 
-|13:15 - 14:45 |Scrittura abstract, e rilettura documentazione con eventiale modifica|
-|15:00 - 16:30 |trascrizione dei test sulla dociemntazione e creazione di un manuale utenti|
+|13:15 - 14:45 |Scrittura abstract, e rilettura documentazione con eventuale modifica|
+|15:00 - 16:30 |trascrizione dei test sulla documentazione e creazione di un manuale utenti|
 
 Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 11:35 |Collegamento pagina web cam al database, ulteriore modifica alla logica del tracking|                 
-|13:15 - 14:45 |-|
-|15:00 - 16:30 |-|
+|10:05 - 14:15 |Collegamento pagina web cam al database, ulteriore modifica alla logica del tracking|                 
+|14:15 - 14:45 |scrittura implementazione nella documentazione|
 
 Fabio
 
@@ -37,9 +36,8 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Modifica presentazione progetto|
-|10:30 - 11:35 |-|                         
-|13:15 - 16:30 |-|
+|10:05 - 14:45 |presentazione progetto|                        
+|14:45 - 16:30 |-|
 
 
 ##  Problemi riscontrati e soluzioni adottate
