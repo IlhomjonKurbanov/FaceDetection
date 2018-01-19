@@ -362,6 +362,7 @@ Prima di tutto abbiamo scelto di utilizzare la libreria di [tracking.js](https:/
 2. Orario nel quale una persona viene specchiata.
 3. Orario di fine del tracking
 4. Giorno in cui è stato eseguito il tracking
+
 **Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
 
 Così è come la pagina mostrala sua forma:
@@ -379,6 +380,15 @@ context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
 context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
 context.fillText('id: ' + ID, rect.x + rect.width + 5, rect.y + 33);
 ~~~
+
+### Creazione pagina Grafici
+
+La pagina grafici esegue una continua sincronizzazione sul DataBase affinchè tutti i dati siano sempre aggiornati.
+La sua funzione è quella di mostrare 2 grafici:
+1. Mostrare la quantità di persone specchiati nella WebCam per ogni fascia oraria.
+2. Mostrare il tempo medio di tracking per ogni fascia oraria.
+
+Tramite una ricerca su Internet siamo venuti a conoscenza di una libreria specializzata nel dispaly di grafici non troppo dispendiosa per quanto riguarda le nostre singole conoscenze personali: [Chart.js](http://www.chartjs.org/).
 
 ### Creazione Database
 
