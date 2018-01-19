@@ -407,7 +407,7 @@ Tramite il seguente comando:
 
 Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requisiti che abbiamo scelto e creato.
 
-|Test Case      | TC-002                              |
+|Test Case      | TC-001                              |
 |---------------|--------------------------------------|
 |**Nome**       |Creazione macchina virtuale |
 |**Riferimento**|REQ-002                               |
@@ -417,7 +417,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Risultati attesi** |Avere la stessa struttura di caretelle che é presente su raspbian.|
 
 
-|Test Case      | TC-003                               |
+|Test Case      | TC-002                               |
 |---------------|--------------------------------------|
 |**Nome**       |Creazione pagina Web per webcam|
 |**Riferimento**|REQ-003                               |
@@ -426,7 +426,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Scaricare la libreria traking.js - Modificare la libreira con il linguaggio JavaScript. |
 |**Risultati attesi** |Avere la pagina web che riconosce le faccie e manda le informazioni al database|
 
-|Test Case      | TC-004                               |
+|Test Case      | TC-003                               |
 |---------------|--------------------------------------|
 |**Nome**       |Creazione pagina Web per grafici |
 |**Riferimento**|REQ-004                               |
@@ -435,7 +435,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Creare i grafici - Prendere i dati dal database e inserirli all`inerno dei grafici.|
 |**Risultati attesi** |I grafici vengono mostrati correttamente in base hai dati presi dal database. |
 
-|Test Case      | TC-005                               |
+|Test Case      | TC-004                               |
 |---------------|--------------------------------------|
 |**Nome**       |Creazione pagina Web per gestione dell’admin|
 |**Riferimento**|REQ-005                               |
@@ -444,7 +444,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Creare un login con l`uso di JavaScript - Gestire la pagina Amministratore inserendo i parametri di modifica.|
 |**Risultati attesi** |L`utente admin riesce a accedere alla pagina e a modificare i parametri.|
 
-|Test Case      | TC-006                               |
+|Test Case      | TC-005                               |
 |---------------|--------------------------------------|
 |**Nome**       |Creare una banca dati |
 |**Riferimento**|REQ-006                               |
@@ -453,7 +453,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Scaricare un programma per creare il database, noi abbiamo utlitzzato Heidi - Cre<re il database con gli stessi parametri della libreira presa e del codice scritto nella pagian web della Webcam.|
 |**Risultati attesi** |Il database riesce a prendere i dati delle pagine prescritte|
 
-|Test Case      | TC-007                               |
+|Test Case      | TC-006                               |
 |---------------|--------------------------------------|
 |**Nome**       |Ricerca di nuovi volti |
 |**Riferimento**|REQ-007                               |
@@ -462,7 +462,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Aver installato la libreria tracking.js - Gestire il riconoscimento facciale tramite JavaScript |
 |**Risultati attesi** |La pagina della Webcam é in grado di riconoscre i volti|
 
-|Test Case      | TC-008                               |
+|Test Case      | TC-007                               |
 |---------------|--------------------------------------|
 |**Nome**       |Salvataggio delle persone sul DB|
 |**Riferimento**|REQ-008                               |
@@ -471,7 +471,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |**Procedura**     | - Collegare il database alle pagine tramite php |
 |**Risultati attesi** |I dati presi dalla webcam sono presenti all`interno del databse |
 
-|Test Case      | TC-009                               |
+|Test Case      | TC-008                               |
 |---------------|--------------------------------------|
 |**Nome**       |Utilizzo del prodotto su RaspBerry|
 |**Riferimento**|REQ-009                               |
