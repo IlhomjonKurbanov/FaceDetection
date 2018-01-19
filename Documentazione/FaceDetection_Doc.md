@@ -398,7 +398,7 @@ Da questa pagina è anche possibile per l'admin eseguire l'accesso. L'accesso av
 
 dopo aver premuto il pulsante appare un form che permette di inserire i dati. I dati richiesti sono semplicemente username e password. 
 
-![form login](Implementazione/login_admin.PNG)
+![form login](Implementazione/loginAdmin.PNG)
 
 Per verificare i dati è richiesto di premere il pulsante login. Se i dati inseriti sono validi verrà caricata in una nuova scheda la pagina dell'admin.
 
@@ -410,7 +410,7 @@ La pagina dell'admin serve per permettere di modificare alcune impostazioni rela
 3. Step size
 La prima impostazione permette di cambiare la densità del rettangolo che si crea attorno alle faccie individuate, la seconda serve per definire la larghezza del rettangolo e la terza permette di modificare la frequenza con la quale aggiornare il frame della pagina.
 
-![Pagina Admin](Implementazione/pagina_admin.PNG)
+![Pagina Admin](Implementazione/paginaAdmin.PNG)
 
 per immettere i valori abbiamo usato tre input di tipo range, il valore scelto viene mostrato all'interno di altri tre input, di tipo textbox.
 
