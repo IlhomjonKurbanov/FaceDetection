@@ -49,7 +49,7 @@ Lucas
 ## Programma di massima per la prossima giornata di lavoro
 
 ~~~
-$servername = "localhost";
+			$servername = "localhost";
 			$username = "root";
 			$password = "";
 			$dbname = "facedetection";
