@@ -15,9 +15,9 @@ In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispe
   
 ## Documentazione
 - [Modello Documentazione](Documentazione/0_Documentazione.md)
-- [Modello Diario](Documentazione/Diari/)
+- [Modello Diario](Documentazione/Diari/ModelloDiario.md)
 
-- [Documentazione](Documentazione/FFaceDetection_Doc.md)
+- [Documentazione Completa](Documentazione/FFaceDetection_Doc.md)
 
 ### Diari
 - [Diari](Documentazione/Diari/)
