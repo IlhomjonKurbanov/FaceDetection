@@ -48,32 +48,4 @@ Lucas
 
 ## Programma di massima per la prossima giornata di lavoro
 
-~~~
-		var dataNumeroVisite = {
-			labels: ["09:00", "10:00", "11:00", "12:00", "13:00", 
-			"14:00", "15:00", "16:00", "17:00", "18:00", "19:00", 
-			"20:00", "21:00", "22:00"],
-			datasets: [{
-				label: "Numero di visite",
-				backgroundColor: "rgba(255,99,132,0.2)",
-				borderColor: "rgba(255,99,132,1)",
-				borderWidth: 2,
-				hoverBackgroundColor: "rgba(255,99,132,0.4)",
-				hoverBorderColor: "rgba(255,99,132,1)",
-				data: [<?php echo $countUsers[0]; ?>, 
-						<?php echo $countUsers[1]; ?>, 
-						<?php echo $countUsers[2]; ?>, 
-						<?php echo $countUsers[3]; ?>, 
-						<?php echo $countUsers[4]; ?>, 
-						<?php echo $countUsers[5]; ?>, 
-						<?php echo $countUsers[6]; ?>, 
-						<?php echo $countUsers[7]; ?>, 
-						<?php echo $countUsers[8]; ?>, 
-						<?php echo $countUsers[9]; ?>, 
-						<?php echo $countUsers[10]; ?>, 
-						<?php echo $countUsers[11]; ?>, 
-						<?php echo $countUsers[12]; ?>,0]
-			}]
-		};
-~~~
 
