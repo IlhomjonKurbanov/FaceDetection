@@ -354,6 +354,32 @@ Tramite il seguente comando:
 
 `sudo apt-get install mariadb-server`
 
+### Creazione pagina WebCam
+
+La pagina della WebCam è la pagina che dirige tutte le operazioni.
+Prima di tutto abbiamo scelto di utilizzare la libreria di [tracking.js](https://trackingjs.com/) per gestire il riconoscimento facciale. Da una piccola [struttura di base trovata sul sito principale](https://trackingjs.com/examples/face_camera.html) è ora necessario aggiungere una qualche riga di codice in più necessaria alla corretta registrazione dei volti sul DataBase:
+1. Id univoco per ogni persona rilevata dalla WebCam.
+2. Orario nel quale una persona viene specchiata.
+3. Orario di fine del tracking
+4. Giorno in cui è stato eseguito il tracking
+**Ognuna di queste informazioni saranno poi fondamentali per la creazione dei grafici di statistica!**
+
+Così è come la pagina mostrala sua forma:
+
+![SO WebCam](Implementazione/paginaWebCam.png)
+
+Con il corretto rilevamento di ogni faccia sullo schermo (contenuto in un oggetto "rect"), viene eseguito un codice JavaScript. Per questa operazione si utilizza un canvas su HTML (qui chiamato "context") che permette di disegnare sullo schermo figure in maniera semplice.
+Il codice qui riportato permette di definire i colori del rettangolo (bordo e testo), disegnarlo e scrivere del testo di informazioni (come l'ID attribuito alle facce e le coordinate che lo localizzano).
+~~~
+context.strokeStyle = 'red';
+context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+context.font = '13px Helvetica';
+context.fillStyle = "#fff";
+context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
+context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+context.fillText('id: ' + ID, rect.x + rect.width + 5, rect.y + 33);
+~~~
+
 ### Creazione Database
 
 Per far si che le pagine comunicano e si scambino i dati tra di solo é stato necessario creare un database.
