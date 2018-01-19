@@ -328,18 +328,22 @@ Secondariamente una volta effettuato il login. L` amministratore avrà il diritt
 ## Implementazione
 
 ### Raspberry
+
 In questo capitolo spiegheremo il perchè abbiamo usato Raspberry e come lo abbiamo utilizzato.
 Abbimo scelto di utilizzare un Raspberry perchè ci sembrava al quanto scomodo lasciare un computer costantemente collegato alla televisione che andremo a utilizzare dutante la presetazione del nostro progetto a EspoProfessioni.
 
 Per fare ciò abbiamo dovuto procurarci un Raspberry, e caricare il suo rispettivo sistema operativo.
 Il sistema operativo si chiama Raspbian versione 4.9.
 Abbiamo scelto la versione Desktop in modo da semplificarci il lavoro.
+
 ![SO raspberry](Implementazione/Rapbian.png)
 
 Una volta scaricato il sitema operativo abbiamo dovuto caricare l`immagine sull SD di Raspberry. Per fare ciò abbiamo dovuto utlizzare il seguente programma, Win32 Disk Imager.
+
 ![SO Caricamento](Implementazione/win32.png)
 
 Una volta fatto ciò siamo pronti per mettere il sistema operativo su Raspberry. 
+
 ![SO Caricamento](Implementazione/installazione.png)
 
 Ora il sistema operativo è installato e adesso ci tocca installare Apache, Php e MariaDB
@@ -359,6 +363,7 @@ Eseguito il download bisgonera attivare il servizio:
 
 Per verificare il corretto funzionamento di Apache basta aprire una pagina web e digitare nella barra di ricerca localhost.
 Se é stato installato correttamente apparirà la seguente pagina.
+
 ![SO Caricamento](Implementazione/ApacheWork.png)
 
 Una volta installato Apache abbiamo continuato intallando Php versione 7.0.19.
@@ -372,17 +377,20 @@ Una volta installato il servizio Php bisgonerà creare il file test.php per veri
 
 Creato il file bisgonerà scrivere il seguente codice:
 
-`<html>
+ ~~~php
+<html>
  <head>
   <title>Test PHP</title>
  </head>
  <body>
-  <?php
+  <?php 
   phpinfo();
   ?>
- </body>`
+ </body>
+ ~~~
   
  Se caricando la pagina test.php apparirà come la seguente immagine, il download é andato a buon fine.
+ 
  ![SO Caricamento](Implementazione/testPHP.png)
  
  
@@ -391,11 +399,7 @@ Tramite il seguente comando:
 
 `sudo apt-get install mariadb-server`
 
-
-
-
-
-
+### Scrivere Titolo
 
 ## Test
 
