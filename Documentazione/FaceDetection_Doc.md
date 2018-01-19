@@ -325,55 +325,33 @@ Per la terza e ultima pagina cioè la pagina dove l` amminitratore potrà cambia
 Secondariamente una volta effettuato il login. L` amministratore avrà il diritto di cambiare le impostazioni a suo piacimento.
 ![Pagina Gafici](Analisi/Mockup_Settings.png)
 
-### Design procedurale
-
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
-
 ## Implementazione
 
-In questo capitolo dovrà essere mostrato come è stato realizzato il
-lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
-risultato ottenuto non per forza può essere come era stato progettato.
+### Raspberry
+In questo capitolo spiegheremo il perchè abbiamo usato Raspberry e come lo abbiamo utilizzato.
+Abbimo scelto di utilizzare un Raspberry perchè ci sembrava al quanto scomodo lasciare un computer costantemente collegato alla televisione che andremo a utilizzare dutante la presetazione del nostro progetto a EspoProfessioni.
 
-Sulla base di queste informazioni il lavoro svolto dovrà essere
-riproducibile.
+Per fare ciò abbiamo dovuto procurarci un Raspberry, e caricare il suo rispettivo sistema operativo.
+Il sistema operativo si chiama Raspbian versione 4.9.
+Abbiamo scelto la versione Desktop in modo da semplificarci il lavoro.
+![SO raspberry](Implementazione/Rapbian.png)
 
-In questa parte è richiesto l’inserimento di codice sorgente/print
-screen di maschere solamente per quei passaggi particolarmente
-significativi e/o critici.
+Una volta scaricato il sitema operativo abbiamo dovuto caricare l`immagine sull SD di Raspberry. Per fare ciò abbiamo dovuto utlizzare il seguente programma, Win32 Disk Imager.
+![SO Caricamento](Implementazione/win32.png)
 
-Inoltre dovranno essere descritte eventuali varianti di soluzione o
-scelte di prodotti con motivazione delle scelte.
+Una volta fatto ciò siamo pronti per mettere il sistema operativo su Raspberry. 
+![SO Caricamento](Implementazione/installazione.png)
 
-Non deve apparire nessuna forma di guida d’uso di librerie o di
-componenti utilizzati. Eventualmente questa va allegata.
+Ora il sistema operativo è installato e adesso ci tocca installare Apache, Php e MariaDB
 
-Per eventuali dettagli si possono inserire riferimenti ai diari.
+
+
 
 ## Test
 
 ### Protocollo di test
 
-Definire in modo accurato tutti i test che devono essere realizzati per
-garantire l’adempimento delle richieste formulate nei requisiti. I test
-fungono da garanzia di qualità del prodotto. Ogni test deve essere
-ripetibile alle stesse condizioni.
-
-
+Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requisiti che abbiamo scelto e creato.
 
 |Test Case      | TC-002                              |
 |---------------|--------------------------------------|
