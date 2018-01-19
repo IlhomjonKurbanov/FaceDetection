@@ -29,7 +29,6 @@ In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispe
 - [Diario 15.12.2017](Documentazione/Diari/I3_DIARIO_PROG2_15.12.2017.md)
 - [Diario 22.12.2017](Documentazione/Diari/I3_DIARIO_PROG2_22.12.2017.md)
 - [Diario 12.01.2018](Documentazione/Diari/I3_DIARIO_PROG2_12.01.2018.md)
-- [Diario 12.01.2018](Documentazione/Diari/I3_DIARIO_PROG2_12.01.2018.md)
 - [Diario 19.01.2018](Documentazione/Diari/I3_DIARIO_PROG2_19.01.2018.md)
 
 
