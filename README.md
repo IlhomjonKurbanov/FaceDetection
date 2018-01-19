@@ -14,7 +14,10 @@ Data di consegna: 19.01.2018
 In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispettivamente di eseguire un tracking dei volti dei partecipanti ad Espoprofessioni 2018 e l'altra sfrutterà le informazioni del primo (tramite Data Base) per sviluppare dei grafici informativi.
   
 ## Documentazione
-- [Documentazione](Documentazione/0_Documentazione.md)
+- [Modello Documentazione](Documentazione/0_Documentazione.md)
+- [Modello Diario](Documentazione/Diari/ModelloDiario.md)
+
+- [Documentazione Completa](Documentazione/FFaceDetection_Doc.md)
 
 ### Diari
 - [Diari](Documentazione/Diari/)
@@ -23,8 +26,10 @@ In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispe
 - [Diario 17.11.2017](Documentazione/Diari/I3_DIARIO_PROG2_17.11.2017.md)
 - [Diario 24.11.2017](Documentazione/Diari/I3_DIARIO_PROG2_24.12.2017.md)
 - [Diario 01.12.2017](Documentazione/Diari/I3_DIARIO_PROG2_1.12.2017.md)
-
-
+- [Diario 15.12.2017](Documentazione/Diari/I3_DIARIO_PROG2_15.12.2017.md)
+- [Diario 22.12.2017](Documentazione/Diari/I3_DIARIO_PROG2_22.12.2017.md)
+- [Diario 12.01.2018](Documentazione/Diari/I3_DIARIO_PROG2_12.01.2018.md)
+- [Diario 19.01.2018](Documentazione/Diari/I3_DIARIO_PROG2_19.01.2018.md)
 
 
 
@@ -32,4 +37,6 @@ In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispe
 - [GitHub CheatSheet](Guide/github-cheatsheet.pdf)
 - [MarkDown CheatSheet](Guide/markdownCheatSheet.md)
 - [Impostare ambiente di lavoro](Guide/ImpostareAmbienteLavoro.md)
+- [Tracking.js](https://trackingjs.com/)
+- [Chart.js](http://www.chartjs.org/)
 
