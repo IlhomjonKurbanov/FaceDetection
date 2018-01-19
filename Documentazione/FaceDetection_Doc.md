@@ -415,12 +415,12 @@ La soluzione che abbiamo portato ci soddisfa ma non al 100%. Il nostro programma
 ## Sitografia
 
 - https://trackingjs.com/, *Tracking.js
-    La libreira per l`implementazione del riconoscimento facciale.
+    La libreira per implementare il riconoscimento facciale.
 - https://www.wikihow.it/Creare-un-Web-Server-su-Raspberry-Pi, *Manuale web-server linux
     Abbiamo usato questo sito per creare un web server su raspberry. 
 -https://www.raspberrypi.org/downloads/raspbian/, *Sitema operativo Raspbian
     Abbamo scaricato il sistema operativo direttamente dal sito del produttore di raspberry.
--http://www.vemp.org/raspberrypi/preparare-una-card-sd-con-raspbian/, *Programma per caricare l`immagine di raspbian su raspberry.
+-http://www.vemp.org/raspberrypi/preparare-una-card-sd-con-raspbian/, *Programma per caricare il .img di raspbian su raspberry.
 -https://www.w3schools.com/js/, *Guida JavaScript
     Abbiamo utilizzato questa guida per eventuali errori o mancanze delle nostre competenze sul linguaggio.
 -https://www.w3schools.com/php/, *Giuida Php
