@@ -13,7 +13,7 @@ Gionata
 |--------------|------------------------------|
 |10:05 - 11:35 |Creazione implementazione documentazione|                 
 |13:15 - 14:45 |Scrittura abstract, e rilettura documentazione con eventuale modifica|
-|15:00 - 16:30 |trascrizione dei test sulla documentazione e creazione di un manuale utenti|
+|15:00 - 16:30 |trascrizione dei test sulla documentazione e creazione di un manuale utenti, caricamento file su raspberry|
 
 Gabriele
 
@@ -27,8 +27,8 @@ Fabio
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:05 - 10:30 |Calcolo e inserimento dati dal database ai grafici|
-|10:30 - 11:35 |-|                         
-|13:15 - 16:30 |-|
+|10:30 - 11:35 |collegamento database con il primo grafico(funzionante)|                         
+|13:15 - 16:30 |scrittura implementazione su documentazione|
 
 
 Lucas
@@ -37,7 +37,7 @@ Lucas
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:05 - 14:45 |presentazione progetto|                        
-|14:45 - 16:30 |-|
+|14:45 - 16:30 |scrittura parte implementazione e caricamento file su raspberry|
 
 
 ##  Problemi riscontrati e soluzioni adottate
