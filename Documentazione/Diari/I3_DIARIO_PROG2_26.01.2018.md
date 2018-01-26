@@ -36,16 +36,20 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 16:30 |Assente			        |
+|8:20 - 9:00 |Collegamento della pagina dell'admin al database |
+|9:00 - 11:35 |lettura dei dati dal database e inserimento negli input della pagina dell'admin |
+|13:15 - 14:00 |inserimento di nuove impostazioni per l'admin (conteggio secondi, giorni arretrati e refresh) |
+|14:00 - 16:30 |invio dei dati dalla pagina al database (non completo) |
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
 1. La pagina della WebCam è ora in grado di distinguere due o più volti in contemporanea ma presenta un problema: ad ogni sfarfallio del Tracking vengono indipendentemente inviati i dati al DB.
+2. la query usata per l'invio dei dati dalla pagina dell'admin al database funziona se scritta da linea di comando ma non funziona usando php e ajax (probabilmente a causa di qualche errore relativo alle variabili.
 
 ##  Punto della situazione rispetto alla pianificazione
 -
 
 ## Programma di massima per la prossima giornata di lavoro
--
+- finire l'implementazione dell'invio dei dati dalla pagina dell'admin al database
 
