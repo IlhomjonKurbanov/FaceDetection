@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `configurazione` (
 -- Dump della struttura di tabella facedetection.webcam
 DROP TABLE IF EXISTS `visita`;
 CREATE TABLE IF NOT EXISTS `visita` (
-  `id_visita` int(11) NOT NULL,
+  `id_visita` int(11) NOT NULL AUTO_INCREMENT,
   `Orario_inizio` time DEFAULT NULL,
   `Orario_fine` time DEFAULT NULL,
   `Data` date DEFAULT NULL,
