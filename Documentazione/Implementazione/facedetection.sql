@@ -35,5 +35,5 @@ CREATE TABLE IF NOT EXISTS `visita` (
 INSERT INTO configurazione VALUES ('Densità_bordo','0.1');
 INSERT INTO configurazione VALUES ("Scala_iniziale","4");
 INSERT INTO configurazione VALUES ("Dimensione_step","2");
-INSERT INTO configurazione VALUES ("Conteggio_secondi","");
+INSERT INTO configurazione VALUES ("Conteggio_secondi","3");
 INSERT INTO configurazione VALUES ("Giorni_arretrati","5");
