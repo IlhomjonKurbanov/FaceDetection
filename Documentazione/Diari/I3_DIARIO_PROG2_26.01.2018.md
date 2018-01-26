@@ -30,9 +30,8 @@ Fabio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:05 - 10:30 |Riunione					      |
-|10:30 - 11:35 |Implementazione salvataggio persone su database					      |                         
-|13:15 - 16:30 |Sviluppo ricezione dati da sito a database|
+|8:30 - 11:35 |Creazione secondo grafico, ricezione e	calcolo valori ricevuti da database				      |                         
+|13:15 - 16:30 |Finalizzazione pagina grafici ed implementazione della configurazione del refresh della pagina|
 
 
 Lucas
