@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `visita` (
   PRIMARY KEY (`id_visita`)
 );
 
-INSERT INTO configurazione VALUES ('Densità_bordo','0.1');
+INSERT INTO configurazione VALUES ('Densita_bordo','0.1');
 INSERT INTO configurazione VALUES ("Scala_iniziale","4");
 INSERT INTO configurazione VALUES ("Dimensione_step","2");
 INSERT INTO configurazione VALUES ("Conteggio_secondi","3");
