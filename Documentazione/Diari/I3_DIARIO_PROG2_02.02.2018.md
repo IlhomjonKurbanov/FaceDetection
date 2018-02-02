@@ -37,7 +37,7 @@ Lucas
 |8:20 - 10:50 |finito l'invio dei dati dalla pagina dell'admin al database |
 |10:50 - 15:00 |collegamento della pagina dell'admin con la pagina dei grafici. messa in funzione del login solo tramite username e password definiti nella tabella amministratore nel database |
 |15:00 - 15:45 |spostamento delle pagine sul rasperry e prova delle due pagine (che al momento non funzionano correttamente sul rasperry)|
-|15:45 - 16:30 | |
+|15:45 - 16:30 | gestione errori delle pagine sul rasperry + creazione pagina "di supporto" per la connessione al database|
 
 
 
