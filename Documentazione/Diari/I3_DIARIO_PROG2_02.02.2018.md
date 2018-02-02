@@ -25,8 +25,7 @@ Fabio
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:30 - 11:35 |Creazione secondo grafico, ricezione e	calcolo valori ricevuti da database				      |                         
-|13:15 - 16:30 |Finalizzazione pagina grafici ed implementazione della configurazione del refresh della pagina|
+|8:30 - 16:30 |Impementazione sistema di recensione|
 
 
 Lucas
