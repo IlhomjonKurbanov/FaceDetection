@@ -194,7 +194,7 @@ funzionalità del prodotto.
 ### Pianificazione
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
-![Gantt Preventivo](Analisi/GANTT_preventivo.jpg)
+![Gantt Preventivo](immagini/GANTT_preventivo.jpg)
 
 
 
