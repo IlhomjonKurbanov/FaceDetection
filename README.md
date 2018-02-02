@@ -5,7 +5,7 @@
 ## Informazioni
 Iniziato il: 07.11.2017
 
-Data di consegna: 19.01.2018
+Data di consegna: 1.03.2018
 
 - [Quaderno dei compiti](Documentazione/qdc_p2_faceDetection.pdf)
 
@@ -14,10 +14,7 @@ Data di consegna: 19.01.2018
 In questo progetto abbiamo come compito sviluppare 2 pagine web incaricate rispettivamente di eseguire un tracking dei volti dei partecipanti ad Espoprofessioni 2018 e l'altra sfrutterà le informazioni del primo (tramite Data Base) per sviluppare dei grafici informativi.
   
 ## Documentazione
-- [Modello Documentazione](Documentazione/0_Documentazione.md)
-- [Modello Diario](Documentazione/Diari/ModelloDiario.md)
-
-- [Documentazione Completa](Documentazione/FFaceDetection_Doc.md)
+- [Documentazione Completa](Documentazione/FaceDetection.md)
 
 ### Diari
 - [Diari](Documentazione/Diari/)
