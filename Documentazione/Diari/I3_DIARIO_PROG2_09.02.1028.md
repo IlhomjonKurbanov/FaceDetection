@@ -33,18 +33,17 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 10:50 |- |
-|10:50 - 15:00 |- |
-|15:00 - 15:45 |-|
-|15:45 - 16:30 |-|
+|8:20 - 9:00 |colloquio con Mussi per decidere i turni per la settimana di espo-professioni |
+|9:00 - 11:35 |ricerca errore di collegamento di sql sul rasperry |
+|13:15 - 16:30 |collegamento della webcam con il database per il cambio di impostazioni |
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. -
+1. sul rasperry le pagine generano un errore che non viene generato sui pc personali. Questo errore è generato da mysql.
 
 ##  Punto della situazione rispetto alla pianificazione
-- 
+- in ritardo
 
 ## Programma di massima per la prossima giornata di lavoro
 - -
