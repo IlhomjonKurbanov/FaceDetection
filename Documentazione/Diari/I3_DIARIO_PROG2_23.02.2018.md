@@ -38,7 +38,9 @@ Lucas
 |--------------|------------------------------|
 |8:20 - 10:00 | ricerca errore di sql sul raspberry |
 |10:00 - 11:35 | cambiamento di due impostazioni per l'admin che impedivano la visualizzazione corretta della pagina della webcam |
-|13:15 - 16:30 |  |
+|13:15 - 15:00 | integrazione della pagina dei grafici fatta da me con quella fatta da Fabio |
+|15:00- 16:00 | prova del refresh della pagina dei grafici e dell'indice di gradimento |
+|16:00- 16:30 | trasporto delle pagine sul raspberry e aggiornamento database |
 
 
 
@@ -58,7 +60,7 @@ FLUSH PRIVILEGES;
 
 ```
 2. Le impostazioni densità bordo e scala iniziale impedivano di visualizzare bene il rettangolo che delimita le facce trovate.
-Ho dovuto cambiare il range di possibilità. Anche questo ha generato un errore a causa di divisioni con numeri decimali
+Ho dovuto cambiare il range di possibilità. Anche questo ha generato un errore a causa di divisioni con numeri decimali.
 
 ##  Punto della situazione rispetto alla pianificazione
 - 
