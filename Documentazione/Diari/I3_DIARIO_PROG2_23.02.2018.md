@@ -33,9 +33,9 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 9:00 |colloquio con Mussi per decidere i turni per la settimana di espo-professioni |
-|9:00 - 11:35 |ricerca errore di collegamento di sql sul rasperry |
-|13:15 - 16:30 |collegamento della webcam con il database per il cambio di impostazioni |
+|8:20 - 10:00 | ricerca errore di sql sul raspberry |
+|10:00 - 11:35 | cambiamento di due impostazioni per l'admin che impedivano la visualizzazione corretta della pagina della webcam |
+|13:15 - 16:30 |  |
 
 
 
@@ -54,6 +54,8 @@ GRANT ALL ON *.* TO 'faceroot'@'localhost';
 FLUSH PRIVILEGES;
 
 ```
+2. Le impostazioni densità bordo e scala iniziale impedivano di visualizzare bene il rettangolo che delimita le facce trovate.
+Ho dovuto cambiare il range di possibilità. Anche questo ha generato un errore a causa di divisioni con numeri decimali.
 
 ##  Punto della situazione rispetto alla pianificazione
 - in ritardo
