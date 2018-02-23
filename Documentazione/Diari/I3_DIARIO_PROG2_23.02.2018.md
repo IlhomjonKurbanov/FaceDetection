@@ -18,7 +18,10 @@ Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|08:20 - 16:30 |- |
+|08:20 - 14:20 |Ho reso responsive la pagina della WebCam, in modo che sia possibile vederla su qualsiasi risoluzione di schermo.|
+|14:20 - 14:30 |Aggiunta di un'animazione che accende e spegne all'infinito il pallino rosso "REC" nella pagina della WebCam.|
+|14:30 - 14:45 |Caricamento della nuova versione della pagina WebCam su Raspberry.|
+|14:45 - 16:30 | |
 
 
 Fabio
