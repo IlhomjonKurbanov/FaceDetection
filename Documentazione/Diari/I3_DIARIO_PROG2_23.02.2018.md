@@ -11,7 +11,7 @@ Gionata
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |10:30 - 11:35 |Ho risolto il problema del collegamento creando un utente mysql chiamato faceroot e dandogli tutti i premessi|                
-|13:15 - 16:30 |-|
+|13:15 - 16:30 |Caricamento file su raspberry e completamento parti di codice disconnesse in base hai collegamenti|
 
 
 Gabriele
