@@ -55,10 +55,10 @@ FLUSH PRIVILEGES;
 
 ```
 2. Le impostazioni densità bordo e scala iniziale impedivano di visualizzare bene il rettangolo che delimita le facce trovate.
-Ho dovuto cambiare il range di possibilità. Anche questo ha generato un errore a causa di divisioni con numeri decimali.
+Ho dovuto cambiare il range di possibilità. Anche questo ha generato un errore a causa di divisioni con numeri decimali
 
 ##  Punto della situazione rispetto alla pianificazione
-- in ritardo
+- 
 
 ## Programma di massima per la prossima giornata di lavoro
 - -
