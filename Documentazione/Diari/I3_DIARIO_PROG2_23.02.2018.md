@@ -10,7 +10,7 @@ Gionata
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|10:30 - 11:35 |Ricerca errore di colegamento di mysql su raspberry|                 
+|10:30 - 11:35 |Ho risolto il problema del collegamento creando un utente mysql chiamato faceroot e dandogli tutti i premessi|                
 |13:15 - 16:30 |-|
 
 
@@ -42,6 +42,18 @@ Lucas
 ##  Problemi riscontrati e soluzioni adottate
 1. Abbiamo risolto il problema "access denied for root@localhost" che non permetteva il funzionamento di nessuna pagina sul raspberry. 
 Per fare questo ho creato un nuovo utente "faceroot" con i tutti i permessi su tutti i database e ho assegnato questo utente alle varie pagine.
+
+```sql
+
+CREATE USER 'faceroot'@'localhost' IDENTIFIED BY 'root';
+
+set password for 'faceroot'@'localhost' = PASSWORD('root');
+
+GRANT ALL ON *.* TO 'faceroot'@'localhost';
+
+FLUSH PRIVILEGES;
+
+```
 
 ##  Punto della situazione rispetto alla pianificazione
 - in ritardo
