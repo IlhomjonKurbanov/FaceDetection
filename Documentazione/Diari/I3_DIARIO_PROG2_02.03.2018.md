@@ -42,6 +42,7 @@ Lucas
 
 ##  Problemi riscontrati e soluzioni adottate
 1. 
+
 ##  Punto della situazione rispetto alla pianificazione
 - 
 
