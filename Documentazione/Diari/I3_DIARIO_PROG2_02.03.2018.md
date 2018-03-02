@@ -10,7 +10,7 @@ Gionata
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|08:15 - 11:35 |-||10:30 -                   
+|08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
 |13:15 - 16:30 |-|
 
 
@@ -18,7 +18,8 @@ Gabriele
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|08:20 - 16:30 |-|
+|08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
+|13:15 - 16:30 |-|
 
 
 Fabio
@@ -33,15 +34,14 @@ Lucas
 
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
-|8:20 - 10:50 |-|
-|10:50 - 15:00 |-|
-|15:00 - 15:45 |-|
-|15:45 - 16:30 | -|
+|08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
+|13:15 - 16:30 |-|
 
 
 
 ##  Problemi riscontrati e soluzioni adottate
-1. 
+1. XAMP non funzionava sul muletto a causa dei svariati servizi installati, andava in confilitto sulle porte
+  Come soluzione abbiamo usato un altro webserver chiamato USB-WEBSERVER preso dal server di barchi.
 
 ##  Punto della situazione rispetto alla pianificazione
 - 
