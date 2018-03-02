@@ -1,7 +1,7 @@
 <?php
 	function connection(){
 		$servername = "localhost";
-			$username = "root";
+			$username = "faceroot";
 			$password = "root";
 			$dbname = "facedetection";
 			global $conn;

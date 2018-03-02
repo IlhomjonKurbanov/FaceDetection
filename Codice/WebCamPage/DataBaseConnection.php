@@ -1,7 +1,7 @@
 <?php
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
+	$username = "faceroot";
+	$password = "root";
 	$dbname = "facedetection";
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	
@@ -15,8 +15,8 @@
 		$Orario_fine = $_GET["endTime"];
 		$Data = $_GET["today"];
 		//$Id_visita = $_GET["ID"];
-		
-		$sql = "INSERT INTO visita (Orario_inizio, Orario_fine, Data) VALUES ('$Orario_inizio', '$Orario_fine', '$Data');";
+		$sql = "INSERT INTO visita (Orario_inizio, Orario_fine, Data) VALUES (from_unixtime('$Orario_inizio'),from_unixtime('$Orario_fine'),from_unixtime('$Data'));";
+		//$sql = "INSERT INTO visita (Orario_inizio, Orario_fine, Data) VALUES ('$Orario_inizio', '$Orario_fine', '$Data');";
 		if($conn->query($sql) == FALSE) {
 			echo "invio non riuscito!";
 		}

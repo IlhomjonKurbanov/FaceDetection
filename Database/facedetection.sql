@@ -2,6 +2,9 @@
 DROP DATABASE IF EXISTS `facedetection`;
 CREATE DATABASE IF NOT EXISTS `facedetection` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `facedetection`;
+CREATE USER 'faceroot'@'localhost' IDENTIFIED BY 'root';
+GRANT ALL ON facedetection.* TO 'faceroot'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
 -- Dump della struttura di tabella facedetection.amministratore
 DROP TABLE IF EXISTS `amministratore`;
@@ -45,6 +48,7 @@ INSERT INTO configurazione VALUES ("Scala_iniziale","1");
 INSERT INTO configurazione VALUES ("Dimensione_step","1");
 INSERT INTO configurazione VALUES ("refresh","15");
 INSERT INTO configurazione VALUES ("Giorni_arretrati","5");
+INSERT INTO configurazione Values ('MaxTimeLastTrack',2000);
 
 INSERT INTO valutazioni VALUES ("1", "0");
 INSERT INTO valutazioni VALUES ("2", "0");

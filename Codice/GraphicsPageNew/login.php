@@ -79,32 +79,47 @@
 		</style>
       
 	</head>
-   
+	
 	<body onload="valoriStandard()">
 	<!-- form contente tutte le impostazioni modificabili dall'admin -->
-	<form method="post" name="sendingData" action="<?=$_SERVER['PHP_SELF'];?>">
+	<form method="post" name="sendingData" action="">
    		<div class="slidecontainer" align="center">
-
-	    	<p>Densità Bordo (trasparenza rettangolo faccia):</p>
-	  		<input type="range" min="1" max="50" value="" class="slider" id="Densita_bordo" name="Densita_bordo" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="Densita_bordoValue">
-	
-	    	<p>Scala iniziale:</p>
-	  		<input type="range" min="10" max="100" value="" class="slider" id="Scala_iniziale" name="Scala_iniziale" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="Scala_inizialeValue">
-
-	    	<p>Dimensione step:</p>
-	  		<input type="range" min="10" max="50" value="" class="slider" id="Dimensione_step" name="Dimensione_step" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="Dimensione_stepValue">
+		
+			<?php 
+			// leggo i valori contenuti nel database e li assegno agli slider
+			require_once("connection.php");
+			connection();
 			
-			<p>Giorni arretrati:</p>
-			<input type="range" min="1" max="30" value="" class="slider" id="Giorni_arretrati" name="Giorni_arretrati" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="Giorni_arretratiValue">
+			$sql = "SELECT Valore, Testo FROM configurazione";
+			if($conn->query($sql) == FALSE){
+				echo "connessione fallita!";
+			}
+			$result = $conn->query($sql);
 			
-			<p>Refresh automatico della pagina dei grafici (sec):</p>
-			<input type="range" min="1" max="30" value="" class="slider" id="refresh" name="refresh" onchange="nuovoValore()">
-	  		Valore: <input type="textbox" class="tbox" id="refreshValue">
-			<br><br><br>
+			$Testo=array();
+			$Valore=array();
+			
+			if ($result->num_rows > 0) {
+				// output data of each row
+				while($row = $result->fetch_assoc()) {
+					array_push($Valore, $row["Valore"]);
+					array_push($Testo, $row["Testo"]);
+				}
+			} else {
+				echo "0 results";
+			}
+			//echo '["' . implode('", "', $Valore) . '"]';
+			$i= 0;
+			$result=mysqli_query($conn,"SELECT count(*) as total from configurazione");
+			$data=mysqli_fetch_assoc($result);
+			while($i < $data['total']){
+				echo "<p>$Testo[$i]</p>
+				<input type='range' min='1' max='50' value='' class='slider' id='$i' name='$i' onchange='nuovoValore()'>
+				Valore: <input type='textbox' class='tbox' id='value.$i'>";
+				$i++;
+			}
+			?>
+
 			<!-- invio dei valori al database -->
 			<div class="testo" id="adminButton">
 				<button onclick="invioValori()" style="width:auto;">Modifica</button>
@@ -112,163 +127,33 @@
 		</div>
 	</form>
 		<?php
-			// leggo i valori contenuti nel database e li assegno agli slider
-			require_once("connection.php");
-			connection();
-			
-			$sql = "SELECT Valore FROM configurazione";
-			if($conn->query($sql) == FALSE){
-				echo "connessione fallita!";
-			}
-			$result = $conn->query($sql);
-			
-			$Valore=array();
-			
-			if ($result->num_rows > 0) {
-				// output data of each row
-				while($row = $result->fetch_assoc()) {
-					array_push($Valore, $row["Valore"]);
-				}
-			} else {
-				echo "0 results";
-			}
-			//echo '["' . implode('", "', $Valore) . '"]';
-		?>
-
-		<?php
 			$conn;
 			
 			// richiesta di collegamento al database
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$Densita_bordoValue = $_POST["Densita_bordo"];
-				$Densita_bordoValue /= 100;
-				
-				// aggiorno il campo nel database
-				$sql = "UPDATE configurazione 
-						SET Valore = $Densita_bordoValue 
-						WHERE Testo = 'Densita_bordo'";
-				if($conn->query($sql) == FALSE) {
-					echo "invio non riuscito!";
-				}
-				
-				// aggiornamento dei valori sulla pagina
-				$sql = "SELECT Valore FROM configurazione";
-				if($conn->query($sql) == FALSE){
-					echo "connessione fallita!";
-				}
-				$result = $conn->query($sql);
-				
-				$Valore=array();	
-				
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-						array_push($Valore, $row["Valore"]);
-					}
-				} else {
-					echo "0 results";
-				}
-			}
-			
-			// richiesta di collegamento al database
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$Scala_inizialeValue = $_POST["Scala_iniziale"];
-				$Scala_inizialeValue /= 10;
-				
-				// aggiorno il campo nel database
-				$sql = "UPDATE configurazione 
-						SET Valore = $Scala_inizialeValue 
-						WHERE Testo = 'Scala_iniziale'";
-				if($conn->query($sql) == FALSE) {
-					echo "invio non riuscito!";
-				}
-				
-				// aggiornamento dei valori sulla pagina
-				$sql = "SELECT Valore FROM configurazione";
-				if($conn->query($sql) == FALSE){
-					echo "connessione fallita!";
-				}
-				$result = $conn->query($sql);
-				
-				$Valore=array();	
-				
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-						array_push($Valore, $row["Valore"]);
-					}
-				} else {
-					echo "0 results";
-				}
-			}
-			
-			// richiesta di collegamento al database
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$Dimensione_stepValue = $_POST["Dimensione_step"];
+				$Densita_bordoValue = $_POST["0"];
+				$Scala_inizialeValue = $_POST["5"];	
+				$Dimensione_stepValue = $_POST["1"];
+				$Giorni_arretrati = $_POST["2"];
+				$refresh = $_POST["4"];
+				$LastTrack = $_POST["3"];
 				$Dimensione_stepValue /= 10;
+				$Scala_inizialeValue /= 5;
+				$Densita_bordoValue /= 100;
+				$LastTrack *= 200;
 				
-				// aggiorno il campo nel database
+				// aggiorno i campi nel database
 				$sql = "UPDATE configurazione 
-						SET Valore = $Dimensione_stepValue 
-						WHERE Testo = 'Dimensione_step'";
-				if($conn->query($sql) == FALSE) {
-					echo "invio non riuscito!";
-				}
-				
-				// aggiornamento dei valori sulla pagina
-				$sql = "SELECT Valore FROM configurazione";
-				if($conn->query($sql) == FALSE){
-					echo "connessione fallita!";
-				}
-				$result = $conn->query($sql);
-				
-				$Valore=array();	
-				
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-						array_push($Valore, $row["Valore"]);
-					}
-				} else {
-					echo "0 results";
-				}
-			}
-			
-			// richiesta di collegamento al database
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$Giorni_arretrati = $_POST["Giorni_arretrati"];
-				
-				// aggiorno il campo nel database
-				$sql = "UPDATE configurazione 
-						SET Valore = $Giorni_arretrati 
-						WHERE Testo = 'Giorni_arretrati'";
-				if($conn->query($sql) == FALSE) {
-					echo "invio non riuscito!";
-				}
-				
-				// aggiornamento dei valori sulla pagina
-				$sql = "SELECT Valore FROM configurazione";
-				if($conn->query($sql) == FALSE){
-					echo "connessione fallita!";
-				}
-				$result = $conn->query($sql);
-				
-				$Valore=array();	
-				
-				if ($result->num_rows > 0) {
-					while($row = $result->fetch_assoc()) {
-						array_push($Valore, $row["Valore"]);
-					}
-				} else {
-					echo "0 results";
-				}
-			}
-			
-			// richiesta di collegamento al database
-			if ($_SERVER["REQUEST_METHOD"] == "POST") {
-				$refresh = $_POST["refresh"];
-				
-				// aggiorno il campo nel database
-				$sql = "UPDATE configurazione 
-						SET Valore = $refresh 
-						WHERE Testo = 'refresh'";
+						SET Valore = 
+						case
+						when Testo = 'Densita_bordo' then $Densita_bordoValue
+						when Testo = 'Scala_iniziale' then $Scala_inizialeValue
+						when Testo = 'Dimensione_step' then $Dimensione_stepValue
+						when Testo = 'Giorni_arretrati' then $Giorni_arretrati
+						when Testo = 'refresh' then $refresh
+						when Testo = 'MaxTimeLastTrack' then $LastTrack
+						end
+						WHERE Testo in ('Densita_bordo','Scala_iniziale','Dimensione_step','Giorni_arretrati','refresh','MaxTimeLastTrack')";
 				if($conn->query($sql) == FALSE) {
 					echo "invio non riuscito!";
 				}
@@ -294,37 +179,41 @@
 			$conn->close();	
 		?>
 		
-		<script type="text/javascript">		
+		<script type="text/javascript">
 			var valore = <?php echo '["' . implode('", "', $Valore) . '"]' ?>;
 			
 			// stampo i valori letti dal database al caricamento della pagina
 			function valoriStandard(){
-				document.getElementById("Densita_bordoValue").disabled = true;
-				document.getElementById("Scala_inizialeValue").disabled = true;
-				document.getElementById("Dimensione_stepValue").disabled = true;
-				document.getElementById("Giorni_arretratiValue").disabled = true;
-				document.getElementById("refreshValue").disabled = true;
+				document.getElementById("value.0").disabled = true;
+				document.getElementById("value.1").disabled = true;
+				document.getElementById("value.2").disabled = true;
+				document.getElementById("value.3").disabled = true;
+				document.getElementById("value.4").disabled = true;
+				document.getElementById("value.5").disabled = true;
 
-				document.getElementById("Densita_bordoValue").value = valore[0];
-				document.getElementById("Scala_inizialeValue").value = valore[4];
-				document.getElementById("Dimensione_stepValue").value = valore[1];
-				document.getElementById("Giorni_arretratiValue").value = valore[2];
-				document.getElementById("refreshValue").value = valore[3];
+				document.getElementById("value.0").value = valore[0];
+				document.getElementById("value.1").value = valore[1];
+				document.getElementById("value.2").value = valore[2];
+				document.getElementById("value.3").value = valore[3];
+				document.getElementById("value.4").value = valore[4];
+				document.getElementById("value.5").value = valore[5];
 				
-				document.getElementById("Densita_bordo").value = valore[0]*100;
-				document.getElementById("Scala_iniziale").value = valore[4]*10;
-				document.getElementById("Dimensione_step").value = valore[1]*10;
-				document.getElementById("Giorni_arretrati").value = valore[2];	
-				document.getElementById("refresh").value = valore[3];	
+				document.getElementById("0").value = valore[0]*100;
+				document.getElementById("1").value = valore[1]*10;
+				document.getElementById("2").value = valore[2];
+				document.getElementById("3").value = valore[3]/200;
+				document.getElementById("4").value = valore[4];
+				document.getElementById("5").value = valore[5]*5;
 			}
 
 			// ad ogni cambiamento cambia anche il valore nel textbox
 			function nuovoValore(){
-				document.getElementById("Densita_bordoValue").value = document.getElementById("Densita_bordo").value/100;
-				document.getElementById("Scala_inizialeValue").value = document.getElementById("Scala_iniziale").value/10;
-				document.getElementById("Dimensione_stepValue").value = document.getElementById("Dimensione_step").value/10;
-				document.getElementById("Giorni_arretratiValue").value = document.getElementById("Giorni_arretrati").value;
-				document.getElementById("refreshValue").value = document.getElementById("refresh").value;
+				document.getElementById("value.0").value = document.getElementById("0").value/100;
+				document.getElementById("value.1").value = document.getElementById("1").value/10;
+				document.getElementById("value.2").value = document.getElementById("2").value;
+				document.getElementById("value.3").value = document.getElementById("3").value*200;
+				document.getElementById("value.4").value = document.getElementById("4").value;
+				document.getElementById("value.5").value = document.getElementById("5").value/5;
 			}
 			
 			// invio i valori al database
