@@ -2,7 +2,7 @@
 	function connection(){
 		$servername = "localhost";
 			$username = "root";
-			$password = "";
+			$password = "root";
 			$dbname = "facedetection";
 			global $conn;
 			$conn = new mysqli($servername, $username, $password, $dbname);
