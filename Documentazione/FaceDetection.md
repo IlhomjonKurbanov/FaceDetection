@@ -59,6 +59,7 @@
  - **Classe:** I3AA
  - **Data d’inizio:** 10.11.2017
  - **Termine della consegna:** 19.01.2018
+ - **Consegna per Espoprofessioni:** 02.03.2018
 
 
 ### Abstract
@@ -257,7 +258,23 @@ Facendo una somma dei vari totali arriviamo al costo totale finale di questo pro
 
 ### Design dei dati e database
 
-Il database che abbiamo creato è molto basico. Presenta due tabelle, la tabella Amministratore dove vengono contenuti i seguenti campi(NomeUtente(PK),Id_WebCam(FK),Password,Densità_Bordo,Conteggio_Secondi, Dimensione_step,Scala_iniziale). Mentre la seconda tabella chiamata WebCam che contiene (Id_Webcam(PK),Orario_inizio,Orario_fine,Data). Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può avere".
+Il database che abbiamo creato è molto basico. Presenta due tabelle, la tabella Amministratore dove vengono contenuti i seguenti campi.
+
+```sql
+
+(NomeUtente(PK),Id_WebCam(FK),Password,Densità_Bordo,
+ Conteggio_Secondi, Dimensione_step,Scala_iniziale)
+ 
+```
+
+Mentre la seconda tabella chiamata WebCam che contiene:
+
+```sql
+
+(Id_Webcam(PK),Orario_inizio,Orario_fine,Data)
+
+```
+Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può avere".
 
 ### Schema E-R, schema logico e descrizione.
 
@@ -266,7 +283,7 @@ Questo é il diagramma ER del database generato per consentire lo scambio dei da
 
 ### Design delle interfacce
 
-Prima di iniziare a scrivere il codice abbiamo scelto assime al gurppo una truttura base sel sito, di come vorremmo che esso diventi. 
+Prima di iniziare a scrivere il codice abbiamo scelto assime al gruppo una struttura base sel sito, di come vorremmo che esso diventi. 
 Per la pagina che riguarda la webcam, cioè dove l`utente vede sè stesso abbiamo pensato a un approccio molto minimale.
 
 ![Pagina WebCam](immagini/MockupCam.PNG)
@@ -281,6 +298,10 @@ Secondariamente una volta effettuato il login. L` amministratore avrà il diritt
 ![Pagina Gafici](immagini/Mockup_Settings.png)
 
 ## Implementazione
+
+### Supporto
+
+Inizialmente abbiamo optato per utilizzare un raspberry dove avremmo caricato tutti i file inerenti al progetto. Così abbiamo recuperato in raspberry e lo abbiamo allestito a mo di webserver. Una volta eseguiti i test su raspberry abbiamo notato che non era abbastanza potente per poter ospitare un progetto come il nostro. Quindi abbiamo spostato tutto su un computer portatile offertoci dalla scuola. Sul computer abbiamo scaricato un programma che lo rende webserver chiamato [USB_SERVER](http://www.usbwebserver.net/) versione 8.5. Una volta fatto ciò abbiamo caricato.
 
 ### Creazione pagina WebCam
 
@@ -502,7 +523,8 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 
 ### Risultati test
 
-I risultati dei test non sono male ma neanche eccelsi. I test TC-001, TC-003, TC-004,TC-005,TC-006,TC-008 sono passati. Ma il problema principale non é stato tanto la creazione delle pagine ma il collegamento tra loro mediante il database. Un altro problema é stata la scrittura del codice della pagina Webcam, il nostro programma riconosce solo una faccia alla volta.
+I risultati dei test non sono male ma neanche eccelsi. I test TC-001, TC-003, TC-004,TC-005,TC-006,TC-008 sono passati. Ma il problema principale non é stato tanto la creazione delle pagine ma il collegamento tra loro mediante il database. Un altro problema é stato il Raspberry, quando abbiamo eseguito i test della prestazione ci siamo accorti che effettivamente il nostro raspberry era troppo "debole" per poter reggere il nostro programma. La webcam andava a scatti e il raspberry di impallava.
+Per rimediare abbiamo ulitizzato un computer prestatoci dalla scuola.
 
 ### Mancanze/limitazioni conosciute
 
