@@ -85,7 +85,7 @@
 	<form method="post" name="sendingData" action="<?=$_SERVER['PHP_SELF'];?>">
    		<div class="slidecontainer" align="center">
 
-	    	<p>Densità Bordo:</p>
+	    	<p>Densità Bordo (trasparenza rettangolo faccia):</p>
 	  		<input type="range" min="1" max="50" value="" class="slider" id="Densita_bordo" name="Densita_bordo" onchange="nuovoValore()">
 	  		Valore: <input type="textbox" class="tbox" id="Densita_bordoValue">
 	
@@ -101,7 +101,7 @@
 			<input type="range" min="1" max="30" value="" class="slider" id="Giorni_arretrati" name="Giorni_arretrati" onchange="nuovoValore()">
 	  		Valore: <input type="textbox" class="tbox" id="Giorni_arretratiValue">
 			
-			<p>Refresh:</p>
+			<p>Refresh automatico della pagina dei grafici (sec):</p>
 			<input type="range" min="1" max="30" value="" class="slider" id="refresh" name="refresh" onchange="nuovoValore()">
 	  		Valore: <input type="textbox" class="tbox" id="refreshValue">
 			<br><br><br>
@@ -122,7 +122,7 @@
 			}
 			$result = $conn->query($sql);
 			
-			$Valore=array();	
+			$Valore=array();
 			
 			if ($result->num_rows > 0) {
 				// output data of each row
@@ -268,7 +268,7 @@
 				// aggiorno il campo nel database
 				$sql = "UPDATE configurazione 
 						SET Valore = $refresh 
-						WHERE Testo = 'Conteggio_secondi'";
+						WHERE Testo = 'refresh'";
 				if($conn->query($sql) == FALSE) {
 					echo "invio non riuscito!";
 				}
@@ -305,17 +305,17 @@
 				document.getElementById("Giorni_arretratiValue").disabled = true;
 				document.getElementById("refreshValue").disabled = true;
 
-				document.getElementById("Densita_bordoValue").value = valore[1];
+				document.getElementById("Densita_bordoValue").value = valore[0];
 				document.getElementById("Scala_inizialeValue").value = valore[4];
-				document.getElementById("Dimensione_stepValue").value = valore[2];
-				document.getElementById("Giorni_arretratiValue").value = valore[3];
-				document.getElementById("refreshValue").value = valore[0];
+				document.getElementById("Dimensione_stepValue").value = valore[1];
+				document.getElementById("Giorni_arretratiValue").value = valore[2];
+				document.getElementById("refreshValue").value = valore[3];
 				
-				document.getElementById("Densita_bordo").value = valore[1]*100;
+				document.getElementById("Densita_bordo").value = valore[0]*100;
 				document.getElementById("Scala_iniziale").value = valore[4]*10;
-				document.getElementById("Dimensione_step").value = valore[2]*10;
-				document.getElementById("Giorni_arretrati").value = valore[3];	
-				document.getElementById("refresh").value = valore[0];	
+				document.getElementById("Dimensione_step").value = valore[1]*10;
+				document.getElementById("Giorni_arretrati").value = valore[2];	
+				document.getElementById("refresh").value = valore[3];	
 			}
 
 			// ad ogni cambiamento cambia anche il valore nel textbox

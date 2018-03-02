@@ -146,11 +146,38 @@
 					   width: 100%;
 					}
 				}
-			/* admin login */
+				
+				#recensione
+				{
+				  margin-left: 75%;
+				  padding: 0px;
+				  height: 16px;
+				  list-style: none;
+				}
+				#STAR_RATING li
+				{
+				  width: 20px;
+				  height: 20px;
+				  display: block;
+				  float: left;
+				  background-image: url('star-off.png');
+				  background-repeat: no-repeat;
+				  cursor: pointer;
+				}
+				#STAR_RATING li.on
+				{
+				  background-image: url('star-on.png');
+				}
+				#STAR_RATING span.output
+				{
+				  padding: 3px;
+				  color: #339900;
+				  font-weight: bold;
+				}
+				tr:nth-child(even) {background-color: #f2f2f2;}
 		</style>
-		
 	</head>
-	<body> 
+	<body > 
 		<div id="testo" class="testo">
 			<h1>FaceDetection</h1>
 				<h3>
@@ -177,7 +204,7 @@
 					  <label><b>Password</b></label>
 					  <input type="password" placeholder="Enter Password" name="psw" required>
 						
-					  <button id="adminLogin" type="submit">Login</button>
+					  <button id="adminLogin" type="submit" onclick="login()" >Login</button>
 					  <input type="checkbox" checked="checked"> Remember me
 					</div>
 				  </form>
@@ -190,23 +217,16 @@
 			<canvas id="chartTempoMedio"></canvas>
 		</div>
 		<?php
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$dbname = "facedetection";
-			$conn = new mysqli($servername, $username, $password, $dbname);
+			require_once("connection.php");
+			connection();
 			
-			// Check connection
-			if ($conn->connect_error) {
-				die("Connection failed: " . $conn->connect_error);
-			}
-			
-			$sql = "SELECT Orario_inizio, Orario_fine, Data FROM webcam";
+			$sql = "SELECT Orario_inizio, Orario_fine, Data, timediff(Orario_fine,Orario_inizio) as 'Durata'  FROM visita";
 			$result = $conn->query($sql);
 			
 			$Orario_inizio=array();
 			$Orario_fine=array();
 			$Data=array();
+			$Durata=array();
 			$arrayIndex = 0;
 			
 			if ($result->num_rows > 0) {
@@ -215,6 +235,7 @@
 					array_push($Orario_inizio, $row["Orario_inizio"]);
 					array_push($Orario_fine, $row["Orario_fine"]);
 					array_push($Data, $row["Data"]);
+					array_push($Durata, $row["Durata"]);
 				}
 			} else {
 				echo "0 results";
@@ -251,69 +272,71 @@
 					$countUsers[13]+=1;
 				}
 			}
-
-			/*$mediaUsers=array(0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+			$mediaUsers=array(0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 			for ($i = 0; $i < count($Orario_inizio);$i++) {
-				if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:00:10") {
+				if (substr($Durata[$i],6,6)>=0 && substr($Durata[$i],6,6)<10 && substr($Durata[$i],3,2)==0){
 					$mediaUsers[0]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:10" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:00:20") {
+				}else if (substr($Durata[$i],6,6)>=10 && substr($Durata[$i],6,6)<20 && substr($Durata[$i],3,2)==0) {
 					$mediaUsers[1]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>"=00:00:20" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:00:30") {
+				}else if (substr($Durata[$i],6,6)>=20 && substr($Durata[$i],6,6)<30 && substr($Durata[$i],3,2)==0) {
 					$mediaUsers[2]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:00:40") {
+				}else if (substr($Durata[$i],6,6)>=30 && substr($Durata[$i],6,6)<40 && substr($Durata[$i],3,2)==0) {
 					$mediaUsers[3]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:00:50") {
+				}else if (substr($Durata[$i],6,6)>=40 && substr($Durata[$i],6,6)<50 && substr($Durata[$i],3,2)==0) {
 					$mediaUsers[4]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:00") {
+				}else if (substr($Durata[$i],6,6)>=50 && substr($Durata[$i],6,6)<60 && substr($Durata[$i],3,2)==0) {
 					$mediaUsers[5]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:10") {
+				}else if (substr($Durata[$i],6,6)>=00 && substr($Durata[$i],6,6)<10 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[6]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:20") {
+				}else if (substr($Durata[$i],6,6)>=10 && substr($Durata[$i],6,6)<20 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[7]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:30") {
+				}else if (substr($Durata[$i],6,6)>=20 && substr($Durata[$i],6,6)<30 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[8]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:40") {
+				}else if (substr($Durata[$i],6,6)>=30 && substr($Durata[$i],6,6)<40 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[9]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:01:50") {
+				}else if (substr($Durata[$i],6,6)>=40 && substr($Durata[$i],6,6)<50 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[10]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:02:00") {
+				}else if (substr($Durata[$i],6,6)>=50 && substr($Durata[$i],6,6)<60 && substr($Durata[$i],3,2)==1) {
 					$mediaUsers[11]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="00:00:00" && date_diff($Orario_fine[$i],$Orario_inizio[$i])<"00:02:10") {
+				}else if (substr($Durata[$i],6,6)>=0 && substr($Durata[$i],6,6)<10 && substr($Durata[$i],3,2)==2) {
 					$mediaUsers[12]+=1;
-				}else if (date_diff($Orario_fine[$i],$Orario_inizio[$i])>="02:00:10") {
+				}else if (substr($Durata[$i],6,6)>=10 && substr($Durata[$i],3,2)>1) {
 					$mediaUsers[13]+=1;
 				}
 			}
-			*/
+			
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				$username=$_POST['uname']; 
+				$password=$_POST['psw']; 
+				//$password=md5($password); // Encrypted Password
+				
+				$query = "SELECT * FROM amministratore WHERE Nome_Utente='$username' and password='$password'";
+				
+				$res = mysqli_query($conn ,$query);
+				$rows = mysqli_num_rows($res);
+				if ($rows==1) 
+				{
+					echo '<script> window.open("login.php"); </script>';
+				}
+				else 
+				{
+					echo '<script> alert("username o password errate") </script>';
+				}
+			}
+
+			$refresh=10000;
+			$sql = "SELECT * from configurazione where Testo like 'refresh'";
+			$result = $conn->query($sql);
+			if ($result->num_rows > 0) {
+				// output data of each row
+				while($row = $result->fetch_assoc()) {
+					$refresh=$row["Valore"]*1000;
+				}
+			}
+
 			$conn->close();
 		?>
 		<script>
-		
-		//Popola l'array con gli orari di inizio del tracking.
-		var count = <?php echo count($Orario_inizio); ?>;
-
-		var Orario_inizio = ["","","","","","","","","","","","","",""];
-		for(i=0; i < count; i++) {
-			Orario_inizio[i] = "<?php echo $Orario_inizio[$arrayIndex+=1]; ?>";
-		}
-		<?php $arrayIndex = 0; ?>
-
-		//Popola l'array con gli orari di fine del tracking.
-		var count = <?php echo count($Orario_fine); ?>;
-		var Orario_fine =  ["","","","","","","","","","","","","",""];
-		for(i=0; i < count; i++) {
-			Orario_fine[i] = "<?php echo $Orario_fine[$arrayIndex+=1]; ?>";
-		}
-		<?php $arrayIndex = 0; ?>
-		
-		//Popola l'array con le date del tracking.
-		var count = <?php echo count($Data); ?>;
-		var Data = ["","","","","","","","","","","","","",""];
-		for(i=0; i < count; i++) {
-			Data[i] = "<?php echo $Data[$arrayIndex+=1]; ?>";
-		}
-		<?php $arrayIndex = 0; ?>	
-
 
 		var dataNumeroVisite = {
 			labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
@@ -324,7 +347,7 @@
 				borderWidth: 2,
 				hoverBackgroundColor: "rgba(255,99,132,0.4)",
 				hoverBorderColor: "rgba(255,99,132,1)",
-				data: [<?php echo $countUsers[0]; ?>, <?php echo $countUsers[1]; ?>, <?php echo $countUsers[2]; ?>, <?php echo $countUsers[3]; ?>, <?php echo $countUsers[4]; ?>, <?php echo $countUsers[5]; ?>, <?php echo $countUsers[6]; ?>, <?php echo $countUsers[7]; ?>, <?php echo $countUsers[8]; ?>, <?php echo $countUsers[9]; ?>, <?php echo $countUsers[10]; ?>, <?php echo $countUsers[11]; ?>, <?php echo $countUsers[12]; ?>,0]
+				data: [<?php echo $countUsers[0]; ?>, <?php echo $countUsers[1]; ?>, <?php echo $countUsers[2]; ?>, <?php echo $countUsers[3]; ?>, <?php echo $countUsers[4]; ?>, <?php echo $countUsers[5]; ?>, <?php echo $countUsers[6]; ?>, <?php echo $countUsers[7]; ?>, <?php echo $countUsers[8]; ?>, <?php echo $countUsers[9]; ?>, <?php echo $countUsers[10]; ?>, <?php echo $countUsers[11]; ?>, <?php echo $countUsers[12]; ?>,<?php echo $countUsers[13]; ?>],
 			}]
 		};
 			
@@ -347,7 +370,7 @@
 		};
 		
 		var dataTempoMedio = {
-			labels: ["00:00:00","00:00:10", "00:00:20", "00:00:30", "00:00:40", "00:00:50", "00:01:00", "00:01:10", "00:01:20", "00:01:30", "00:01:40", "00:01:50", "00:02:00", ">05:00:00"],
+			labels: ["0-10","10-20", "20-30", "30-40", "40-50", "50-60", "60-70", "70-80", "80-90", "90-100", "100-110", "110-120", "130-140", "140<"],
 			datasets: [{
 				label: "Tempo medio di visita",
 				backgroundColor: "rgba(99,132,255,0.2)",
@@ -355,7 +378,7 @@
 				borderWidth: 2,
 				hoverBackgroundColor: "rgba(99,132,255,0.4)",
 				hoverBorderColor: "rgba(99,132,255,1)",
-				data: [65, 59, 20, 81, 56, 55, 40, 35, 24, 78, 13, 35, 86, 24],
+				data: [<?php echo $mediaUsers[0]; ?>,<?php echo $mediaUsers[1]; ?>,<?php echo $mediaUsers[2]; ?>,<?php echo $mediaUsers[3]; ?>,<?php echo $mediaUsers[4]; ?>,<?php echo $mediaUsers[5]; ?>,<?php echo $mediaUsers[6]; ?>,<?php echo $mediaUsers[7]; ?>,<?php echo $mediaUsers[8]; ?>,<?php echo $mediaUsers[9]; ?>,<?php echo $mediaUsers[10]; ?>,<?php echo $mediaUsers[11]; ?>,<?php echo $mediaUsers[12]; ?>,<?php echo $mediaUsers[13]; ?>],
 			}]
 		};
 			
@@ -386,6 +409,16 @@
 			data: dataTempoMedio
 		});
 		
+		function login(){
+			document.sendingData.submit();
+			document.getElementById("username").value="";
+			document.getElementById("password").value="";
+		}
+		
+		// faccio il preload dell'immagine utilizzata per l'effetto rollover
+		setTimeout(function(){location.reload() }, <?php echo $refresh; ?>);
 		</script>
-	</body>
+		<form id="form" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method="post">
+</script>
+</body>
 </html>
