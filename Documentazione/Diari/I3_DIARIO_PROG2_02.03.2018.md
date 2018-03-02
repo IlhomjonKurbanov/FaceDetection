@@ -36,7 +36,7 @@ Lucas
 |--------------|------------------------------|
 |08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|       
 |12:30 - 15:00 |sistemazione della pagina dell'admin (implementazione del codice per rendere la pagina dinamica rispetto alla tabella configurazione del database)|
-|15:00 - 16:30 ||       
+|15:00 - 16:30 |spostamento del progetto sul muletto e prove varie|       
 
 
 ##  Problemi riscontrati e soluzioni adottate
