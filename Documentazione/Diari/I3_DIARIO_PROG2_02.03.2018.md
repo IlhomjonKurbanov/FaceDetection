@@ -11,7 +11,7 @@ Gionata
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
-|13:15 - 16:30 |-|
+|13:15 - 16:30 |sistemazione relativa al riconoscimento facciale di piu facce|
 
 
 Gabriele
@@ -19,7 +19,7 @@ Gabriele
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
-|13:15 - 16:30 |-|
+|13:15 - 16:30 |sistemazione relativa al riconoscimento facciale di piu facce|
 
 
 Fabio
@@ -35,7 +35,7 @@ Lucas
 |Orario        |Lavoro svolto                 |
 |--------------|------------------------------|
 |08:15 - 11:35 |Abbiamo creato il webserver sul muletto e abbiamo caricato i file del progetto, togliendo di mezzo il raspberry|                  
-|13:15 - 16:30 |-|
+|13:15 - 16:30 |sistemazione relativa al riconoscimento facciale di piu facce|
 
 
 
@@ -44,7 +44,7 @@ Lucas
   Come soluzione abbiamo usato un altro webserver chiamato USB-WEBSERVER preso dal server di barchi.
 
 ##  Punto della situazione rispetto alla pianificazione
-- 
+- PROGETTO FINITOOOO
 
 ## Programma di massima per la prossima giornata di lavoro
-- 
+- messa a punto della documentazione e della presentazione powerpoint
