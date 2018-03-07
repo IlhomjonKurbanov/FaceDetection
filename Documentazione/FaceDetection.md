@@ -1,50 +1,27 @@
 1. [Introduzione](#introduzione)
-
   - [Informazioni sul progetto](#informazioni-sul-progetto)
-
   - [Abstract](#abstract)
-
   - [Scopo](#scopo)
-
-1. [Analisi](#analisi)
-
+2. [Analisi](#analisi)
   - [Analisi del dominio](#analisi-del-dominio)
-  
   - [Analisi dei mezzi](#analisi-dei-mezzi)
-
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
-
   - [Use case](#use-case)
-
   - [Pianificazione](#pianificazione)
-
-1. [Progettazione](#progettazione)
-
+3. [Progettazione](#progettazione)
   - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
-
   - [Design dei dati e database](#design-dei-dati-e-database)
-
-1. [Implementazione](#implementazione)
-
-1. [Test](#test)
-
+4. [Implementazione](#implementazione)
+5. [Test](#test)
   - [Protocollo di test](#protocollo-di-test)
-
   - [Risultati test](#risultati-test)
-
   - [Mancanze/limitazioni conosciute](#mancanze/limitazioni-conosciute)
-
-1. [Consuntivo](#consuntivo)
-
-1. [Conclusioni](#conclusioni)
-
+6. [Consuntivo](#consuntivo)
+7. [Conclusioni](#conclusioni)
   - [Sviluppi futuri](#sviluppi-futuri)
-
   - [Considerazioni personali](#considerazioni-personali)
-
-1. [Sitografia](#sitografia)
-
-1. [Allegati](#allegati)
+8. [Sitografia](#sitografia)
+9. [Allegati](#allegati)
 
 
 ## Introduzione
@@ -86,103 +63,110 @@ The result was what I expected since the beginning, our approach worked very wel
   Il committente richiede una pagina web che effettua un riconoscimento facciale. Una volta che la faccia viene riconosciuta dalla pagina viene salvata all`interno di una variabile e a sua volta salvata in un database. In base al numero di persone riconosciute e al tempo che le persone rimangono ferme davanti alla web cam viene redatto un grafico. Mentre un secondo grafico veiene redatto in base al numero di persone che sono state riconosciute dalla webcam e alla fascia oraria. 
 
   
-  |ID  |REQ-001                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Face Detection |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    | Requisito|
-  |**001**      | Creazione macchina virtuale  |
-  |**002**      | Creazione pagina Web per webcam             |
-  |**003**      | Creazione pagina Web per grafici            |
-  |**004**      | Creazione pagina web per gestione dell’admin|                
-  |**005**      | Creare una banca dati                |
-  |**006**      | Ricerca di nuovi volti               |
-  |**007**      | Salvataggio delle persone su DB             |
-  |**008**      | Utilizzo del prodotto su RaspBerry          |
+|ID          |REQ-001                                         |
+|------------|------------------------------------------------|
+|**Nome**    |Face Detection                                  |
+|**Priorità**|1                                               |
+|**Versione**|1.0                                             |
+|**Note**    |                                                |
+|**Sub-ID**  | Requisito                                      |
+|**001**     | Creazione macchina virtuale                    |
+|**002**     | Creazione pagina Web per webcam                |
+|**003**     | Creazione pagina Web per grafici               | 
+|**004**     | Creazione pagina web per gestione dell’admin.  |                
+|**005**     | Creare una banca dati                          |
+|**006**     | Ricerca di nuovi volti                         |
+|**007**     | Salvataggio delle persone su DB                |
+|**008**     | Utilizzo del prodotto su RaspBerry             |
 
-  |ID  |REQ-002                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Creazione macchina virtuale |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Requisito |
-  |**001**      | Si deve creazione macchina virtuale su “Virtual Box” |
-  |**002**      | Si deve installare di XAMPP v7.0.2            |
-  |**003**      | Si deve creare la struttura in cartelle che ospita i file   del progetto.           |
+
+|ID  |REQ-002                                        |
+|----|------------------------------------------------|
+|**Nome**    |Creazione macchina virtuale |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Requisito |
+|**001**      | Si deve creazione macchina virtuale su “Virtual Box” |
+|**002**      | Si deve installare di XAMPP v7.0.2            |
+|**003**      | Si deve creare la struttura in cartelle che ospita i file   del progetto.           |
   
-   |ID  |REQ-003                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Creazione pagina Web per webcam |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Requisito |
-  |**001**      |Si deve implementare una rappresentazione della webcam|
-  |**002**      | Si deve organizzare e realizzare una interfaccia grafica    |
   
-  |ID  |REQ-004                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Creazione pagina Web per grafici |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Requisito |
-  |**001**      | Si deve implementare la lettura dal DB |
-  |**002**      | Si devono creare 2 grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo.|
-  |**003**      | Si deve poter utilizzare un form di log in per il REQ-005           |
   
-   |ID  |REQ-005                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Creazione pagina Web per gestione dell’admin |
-  |**Priorità**|2                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Miglioria |
-  |**001**      |Si deve creare un pannello di gestione per le impostazioni della WebCam.|
-  |**002**      | Si deve creare un pannello di gestione per le impostazioni di Tracking.    |
+|ID  |REQ-003                                        |
+|----|------------------------------------------------|
+|**Nome**    |Creazione pagina Web per webcam |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Requisito |
+|**001**      |Si deve implementare una rappresentazione della webcam|
+|**002**      | Si deve organizzare e realizzare una interfaccia grafica    |
   
-  |ID  |REQ-006                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Creare una banca dati |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Miglioria |
-   |**001**      |Si deve creare un DB che ospiterà le persone tramite: 	Tempo di fronte all’obiettivo e ora del tracking.|
+|ID  |REQ-004                                        |
+|----|------------------------------------------------|
+|**Nome**    |Creazione pagina Web per grafici |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Requisito |
+|**001**      | Si deve implementare la lettura dal DB |
+|**002**      | Si devono creare 2 grafici: Numero di persone rilevate in ogni ora del giorno. Tempo medio di una persona di fronte all’obiettivo.|
+|**003**      | Si deve poter utilizzare un form di log in per il REQ-005           |
+
+  
+|ID  |REQ-005                                        |
+|----|------------------------------------------------|
+|**Nome**    |Creazione pagina Web per gestione dell’admin |
+|**Priorità**|2                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Miglioria |
+|**001**      |Si deve creare un pannello di gestione per le impostazioni della WebCam.|
+|**002**      | Si deve creare un pannello di gestione per le impostazioni di Tracking.    |
+  
+
+|ID  |REQ-006                                        |
+|----|------------------------------------------------|
+|**Nome**    |Creare una banca dati |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Miglioria |
+|**001**      |Si deve creare un DB che ospiterà le persone tramite: 	Tempo di fronte all’obiettivo e ora del tracking.|
    
-   |ID  |REQ-007                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Ricerca di nuovi volti |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Requisito |
-  |**001**      | Si deve scegliere la libreria migliore per il tracking dei volti: openCV, tracking.js |
-  |**002**      |Si deve implementare il codice JavaScript per l’individuazione dei dati tramite libreria.|
-  |**003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto.|
+|ID  |REQ-007                                        |
+|----|------------------------------------------------|
+|**Nome**    |Ricerca di nuovi volti |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Requisito |
+|**001**      | Si deve scegliere la libreria migliore per il tracking dei volti: openCV, tracking.js |
+|**002**      |Si deve implementare il codice JavaScript per l’individuazione dei dati tramite libreria.|
+|**003**      | La webcam deve eseguire la ricerca di nuovi volti ogni 15 secondi e se rileva dei volti nelle coordinate vicine a quelle vecchie, non ne terrà conto.|
   
-  |ID  |REQ-008                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Salvataggio delle persone sul DB |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Miglioria |
-   |**001**      |Si deve gestire il codice PHP del sito web per il corretto invio dei dati al DB.|
+
+|ID  |REQ-008                                        |
+|----|------------------------------------------------|
+|**Nome**    |Salvataggio delle persone sul DB |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Miglioria |
+|**001**      |Si deve gestire il codice PHP del sito web per il corretto invio dei dati al DB.|
   
-  |ID  |REQ-009                                        |
-  |----|------------------------------------------------|
-  |**Nome**    |Utilizzo del prodotto su RaspBerry |
-  |**Priorità**|1                     |
-  |**Versione**|1.0                   |
-  |**Note**    ||
-  |**Sub-ID**    |Requisito |
-  |**001**      | Si deve allestire un webserver Linux su RaspBerry|
-  |**002**      |Si deve trasporre l’intero codice del progetto su RaspBerry|
-  |**003**      | Si deve poter connettere 1 WebCam e 2 schermi contemporaneamente per input e output.|
+
+|ID  |REQ-009                                        |
+|----|------------------------------------------------|
+|**Nome**    |Utilizzo del prodotto su RaspBerry |
+|**Priorità**|1                     |
+|**Versione**|1.0                   |
+|**Note**    ||
+|**Sub-ID**    |Requisito |
+|**001**      | Si deve allestire un webserver Linux su RaspBerry|
+|**002**      |Si deve trasporre l’intero codice del progetto su RaspBerry|
+|**003**      | Si deve poter connettere 1 WebCam e 2 schermi contemporaneamente per input e output.|
 
  
 
@@ -195,6 +179,7 @@ funzionalità del prodotto.
 ### Pianificazione
 
 Questo é il Gantt che abbiamo realizzato in base alla lista dei requisiti che abbiamo redatto e al tempo a disposizione.
+
 ![Gantt Preventivo](immagini/GANTT_preventivo.jpg)
 
 
@@ -221,7 +206,9 @@ Il Raspberry é stato trasformato in un webserver, all`intreno abbiamo scaricato
 |  Php  |  7.0.19  |
 |  MariaDB  |  10.1.23  |
 
+
 ### Analisi dei costi
+
 #### Costo per persona:
 È stimato che un apprendista al nostro stesso livello guadagni circa 80 franchi all`ora.
 
@@ -279,6 +266,7 @@ Le due tabelle sono collegate tramite una relazione molti a uno chiamata "può a
 ### Schema E-R, schema logico e descrizione.
 
 Questo é il diagramma ER del database generato per consentire lo scambio dei dati tramite le varie pagine web.
+
 ![Pagina WebCam](immagini/schemaER.png)
 
 ### Design delle interfacce
@@ -289,12 +277,15 @@ Per la pagina che riguarda la webcam, cioè dove l`utente vede sè stesso abbiam
 ![Pagina WebCam](immagini/MockupCam.PNG)
 
 Mentre per la pagina dove verranno inseriti i grafici abbiamo pensato a un approccio un po meno minimale ma più adatto alla situazione.
+
 ![Pagina Gafici](immagini/MockuoGrafici.png)
 
 Per la terza e ultima pagina cioè la pagina dove l` amminitratore potrà cambiare le impostazioni della webcam o della pagina. Come prima cosa dovrà coparire la pagina di login:
+
 ![Pagina Gafici](immagini/Mockup_Login.png)
 
 Secondariamente una volta effettuato il login. L` amministratore avrà il diritto di cambiare le impostazioni a suo piacimento.
+
 ![Pagina Gafici](immagini/Mockup_Settings.png)
 
 ## Implementazione
@@ -320,7 +311,8 @@ Così è come la pagina mostrala sua forma:
 
 Con il corretto rilevamento di ogni faccia sullo schermo (contenuto in un oggetto "rect"), viene eseguito un codice JavaScript. Per questa operazione si utilizza un canvas su HTML (qui chiamato "context") che permette di disegnare sullo schermo figure in maniera semplice.
 Il codice qui riportato permette di definire i colori del rettangolo (bordo e testo), disegnarlo e scrivere del testo di informazioni (come l'ID attribuito alle facce e le coordinate che lo localizzano).
-~~~
+
+~~~javascript
 context.strokeStyle = 'red';
 context.strokeRect(rect.x, rect.y, rect.width, rect.height);
 context.font = '13px Helvetica';
@@ -329,14 +321,19 @@ context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
 context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
 context.fillText('id: ' + ID, rect.x + rect.width + 5, rect.y + 33);
 ~~~
+
 Per ciò che riguarda il passaggio dei dati al database ci siamo dovuti collegare al database tramite php ed abbiamo preso i dati ricevuti dalla pagina e li abbiamo inseriti nell'apposita tabella del database.
-~~~
-$sql = "INSERT INTO webcam (Orario_inizio, Orario_fine, Data) VALUES (".$Orario_inizio.", ".$Orario_fine.", ".$Data.");";
+
+~~~php
+$sql = "INSERT INTO webcam (Orario_inizio, Orario_fine, Data) 
+		VALUES (".$Orario_inizio.", ".$Orario_fine.", ".$Data.");";
 if($conn->query($sql) == FALSE) {
   echo "invio non riuscito!";
 }
-### Creazione pagina Grafici
+
 ~~~
+
+### Creazione pagina Grafici
 La pagina grafici esegue una continua sincronizzazione sul DataBase affinchè tutti i dati siano sempre aggiornati.
 La sua funzione è quella di mostrare 2 grafici:
 1. Mostrare la quantità di persone specchiati nella WebCam per ogni fascia oraria.
@@ -345,7 +342,8 @@ La sua funzione è quella di mostrare 2 grafici:
 Tramite una ricerca su Internet siamo venuti a conoscenza di una libreria specializzata nel dispaly di grafici non troppo dispendiosa per quanto riguarda le nostre singole conoscenze personali: [Chart.js](http://www.chartjs.org/).
 
 Per creare i grafici mi sono dapprima connesso al database ed ho preso ed inserito dentro degli array i dati della data attuale, dell'inizio e della fine di sessione.
-~~~
+
+~~~php
 $sql = "SELECT Orario_inizio, Orario_fine, Data FROM webcam";
 $result = $conn->query($sql);
 			
@@ -364,9 +362,13 @@ if ($result->num_rows > 0) {
 	echo "0 results";
 }
 ~~~
+
 In seguito ho fatto un counter che permettesse di calcolare quante persone utilizzano l'applicazione in vari fasci d'orario. Inoltre ho utilizzato una tecnica simile anche per calcolare la media della durata di sessione per ogni utente.
 Dopo aver eseguito tutti i calcoli ed aver inserito i risultati negli array, ho creato i grafici ed inserito i dati. Per inserirli ho utilizzato più volte una tecnica di programmazione che permette l'utilizzo delle variabili presenti nella porzione di codice php e l'utilizzo diretto nella parte javascript, e l'ho inserita all'interno della parte "data" della creazione del grafico. 
-~~~
+
+
+~~~javascript
+
 var dataNumeroVisite = {
   labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00",             "22:00"],
 	datasets: [{
@@ -379,10 +381,15 @@ var dataNumeroVisite = {
 				data: [<?php echo $countUsers[0]; ?>, <?php echo $countUsers[1]; ?>, <?php echo $countUsers[2]; ?>, <?php echo $countUsers[3]; ?           >, <?php echo $countUsers[4]; ?>, <?php echo $countUsers[5]; ?>, <?php echo $countUsers[6]; ?>, <?php echo $countUsers[7]; ?>,          <?php echo $countUsers[8]; ?>, <?php echo $countUsers[9]; ?>, <?php echo $countUsers[10]; ?>, <?php echo $countUsers[11]; ?>,            <?php echo $countUsers[12]; ?>,0]
       	}]
   };
+  
 ~~~
+
+
 Questo è il risultato ottenuto:
 
+
 ![Pagina Admin](immagini/PaginaGrafici.PNG)
+
 
 Da questa pagina è anche possibile per l'admin eseguire l'accesso. L'accesso avviene tramite un pulsante (che mostra la scritta "Login") 
 
@@ -406,16 +413,22 @@ La prima impostazione permette di cambiare la densità del rettangolo che si cre
 
 per immettere i valori abbiamo usato tre input di tipo range, il valore scelto viene mostrato all'interno di altri tre input, di tipo textbox.
 
-~~~
+~~~html
 <p>Edges Density:</p>
+
 <input type="range" min="1" max="50" value="1" class="slider" id="density" onchange="nuovoValore()">
 Valore: <input type="textbox" class="tbox" id="densityValue">
+
 <p>Initial Scale:</p>
+
 <input type="range" min="1" max="10" value="4" class="slider" id="scale" onchange="nuovoValore()">
 Valore: <input type="textbox" class="tbox" id="scaleValue">
+
 <p>Step Size:</p>
+
 <input type="range" min="1" max="5" value="2" class="slider" id="size" onchange="nuovoValore()">
 Valore: <input type="textbox" class="tbox" id="sizeValue">
+
 ~~~
 
 Questa pagina è stata ideata per fare in modo che le impostazioni venissero passate al database. Dal database le nuove impostazioni devono essere mandate alla pagina della webcam per aggiornarla.
@@ -426,6 +439,7 @@ Questa pagina è stata ideata per fare in modo che le impostazioni venissero pas
 Per far si che le pagine comunicano e si scambino i dati tra di solo é stato necessario creare un database.
 Per crearlo abbiamo usato Heidi versione 9.4.0.5125. Heidi è un programma che permette di creare database tramite un interfaccia grafica.
 Ecco come si presenta il database su Heidi.
+
 ![SO Caricamento](immagini/dbFace.png)
 
 La tabella Webcam si presenta così:
@@ -477,10 +491,10 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |---------------|--------------------------------------|
 |**Nome**       |Creazione pagina Web per gestione dell’admin|
 |**Riferimento**|REQ-005                               |
-|**Descrizione**|Creazione di una pagina inserente all`accesso asmin per la modifica dei parametri della webcam |
+|**Descrizione**|Creazione di una pagina inserente all'accesso asmin per la modifica dei parametri della webcam |
 |**Prerequisiti**|Aver creato la pagina web per la Webcam |
-|**Procedura**     | - Creare un login con l`uso di JavaScript - Gestire la pagina Amministratore inserendo i parametri di modifica.|
-|**Risultati attesi** |L`utente admin riesce a accedere alla pagina e a modificare i parametri.|
+|**Procedura**     | - Creare un login con l'uso di JavaScript - Gestire la pagina Amministratore inserendo i parametri di modifica.|
+|**Risultati attesi** |L'utente admin riesce a accedere alla pagina e a modificare i parametri.|
 
 |Test Case      | TC-005                               |
 |---------------|--------------------------------------|
@@ -504,7 +518,7 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 |---------------|--------------------------------------|
 |**Nome**       |Salvataggio delle persone sul DB|
 |**Riferimento**|REQ-008                               |
-|**Descrizione**|Questo test serve per verificare il corretto funzionamento dell`immissione dei dati all`interno del database|
+|**Descrizione**|Questo test serve per verificare il corretto funzionamento dell'immissione dei dati all'interno del database|
 |**Prerequisiti**|aver creato il database|
 |**Procedura**     | - Collegare il database alle pagine tramite php |
 |**Risultati attesi** |I dati presi dalla webcam sono presenti all`interno del databse |
@@ -526,13 +540,14 @@ Le tabelle  sottostanti rappresentano i test che abbiamo svolto in base hai requ
 I risultati dei test non sono male ma neanche eccelsi. I test TC-001, TC-003, TC-004,TC-005,TC-006,TC-008 sono passati. Ma il problema principale non é stato tanto la creazione delle pagine ma il collegamento tra loro mediante il database. Un altro problema é stato il Raspberry, quando abbiamo eseguito i test della prestazione ci siamo accorti che effettivamente il nostro raspberry era troppo "debole" per poter reggere il nostro programma. La webcam andava a scatti e il raspberry di impallava.
 Per rimediare abbiamo ulitizzato un computer prestatoci dalla scuola.
 
-### Mancanze/limitazioni conosciute
+### Mancanze e limitazioni conosciute
 
 Per noi é stata difficile la partenza, cioè suddividerci il lavoro e imparare a lavorare come un team. Una volta capito il vero funzionamento del lavoro di squadra e una volta che abbiamo suddiviso i compiti siamo riusciti a arrivare ad avere un vero e proprio team organizzato. Per quanto riguarda le competenze informatiche abbiamo avuto qualche difficolta con l` utilizzo di programmi o linguaggi che non abbiamo mai usato. Come per esempio raspberry, abbiamo dovuto installare il suo sistema operativo (raspbian) e installare un webserver su esso.
 
 ## Consuntivo
 
 Ecco come sono andate le ore di lavoro, in base a quelle che abbiamo programmato prima dell`inizio del progetto.
+
 ![Gantt Preventivo](immagini/GANTT_consuntivo.png)
 
 ## Conclusioni
