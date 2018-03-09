@@ -414,21 +414,15 @@ La prima impostazione permette di cambiare la densità del rettangolo che si cre
 per immettere i valori abbiamo usato tre input di tipo range, il valore scelto viene mostrato all'interno di altri tre input, di tipo textbox.
 
 ~~~html
-<p>Edges Density:</p>
-
-<input type="range" min="1" max="50" value="1" class="slider" id="density" onchange="nuovoValore()">
-Valore: <input type="textbox" class="tbox" id="densityValue">
-
-<p>Initial Scale:</p>
-
-<input type="range" min="1" max="10" value="4" class="slider" id="scale" onchange="nuovoValore()">
-Valore: <input type="textbox" class="tbox" id="scaleValue">
-
-<p>Step Size:</p>
-
-<input type="range" min="1" max="5" value="2" class="slider" id="size" onchange="nuovoValore()">
-Valore: <input type="textbox" class="tbox" id="sizeValue">
-
+$i= 0;
+$result=mysqli_query($conn,"SELECT count(*) as total from configurazione");
+$data=mysqli_fetch_assoc($result);
+while($i < $data['total']){
+	echo "<p>$Testo[$i]</p>
+	<input type='range' min='1' max='50' value='' class='slider' id='$i' name='$i' onchange='nuovoValore()'>
+	Valore: <input type='textbox' class='tbox' id='value.$i'>";
+	$i++;
+}
 ~~~
 
 Questa pagina è stata ideata per fare in modo che le impostazioni venissero passate al database. Dal database le nuove impostazioni devono essere mandate alla pagina della webcam per aggiornarla.
